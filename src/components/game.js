@@ -190,8 +190,8 @@ export default class Game extends React.Component {
         console.log("audio :>> ", audio);
 
         axios
-            // .post("http://13.67.109.16:5050", blob)
-            .post('http://localhost:8080', blob)
+            .post("http://13.67.109.16:5050", blob)
+            // .post('http://localhost:8080', blob)
             .then((res) => console.log(`res`, res))
             .catch((e) => console.log(`e`, e));
     }
