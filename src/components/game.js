@@ -11,7 +11,7 @@ import King from "../pieces/king";
 import Pawn from "../pieces/pawn";
 import FallenSoldierBlock from "./fallen-soldier-block.js";
 import initialiseChessBoard from "../helpers/board-initialiser.js";
-import {tryPromote} from "../helpers/utils";
+import { tryPromote } from "../helpers/utils";
 
 export default class Game extends React.Component {
     constructor() {
@@ -28,7 +28,7 @@ export default class Game extends React.Component {
             recordState: null,
             lastOpponentMove: null,
             isWhiteCastled: false,
-            isBlackCastled: false
+            isBlackCastled: false,
         };
 
         // this.handleAudioResponse = this.handleAudioResponse.bind(this);
@@ -64,8 +64,8 @@ export default class Game extends React.Component {
     }
 
     castled(player) {
-        if(player === 1) this.setState({isWhiteCastled: true});
-        else this.setState({isBlackCastled: true});
+        if (player === 1) this.setState({ isWhiteCastled: true });
+        else this.setState({ isBlackCastled: true });
     }
 
     handleClick(i) {
@@ -79,7 +79,7 @@ export default class Game extends React.Component {
                 status: "Choose destination for the selected piece",
                 sourceSelection: i,
             });
-            return 'success';
+            return "success";
         }
 
         squares[this.state.sourceSelection].style = {
@@ -122,11 +122,15 @@ export default class Game extends React.Component {
         squares[i] = mightPromoteSquare; //squares[this.state.sourceSelection];
         squares[sourceSelection] = null;
 
-        if(squares[i] instanceof King && squares[i].isCastling(sourceSelection, i) && !this.isCastled(this.state.player)) {
+        if (
+            squares[i] instanceof King &&
+            squares[i].isCastling(sourceSelection, i) &&
+            !this.isCastled(this.state.player)
+        ) {
             const isCastlingRight = i > sourceSelection;
             const rookPos = isCastlingRight ? i + 1 : i - 2;
             const rookDes = isCastlingRight ? sourceSelection + 1 : sourceSelection - 1;
-            squares[rookDes] = squares[rookPos]
+            squares[rookDes] = squares[rookPos];
             squares[rookPos] = null;
             this.castled(this.state.player);
         }
@@ -154,7 +158,7 @@ export default class Game extends React.Component {
             turn,
         }));
 
-        return 'success';
+        return "success";
     }
 
     getKingPosition(squares, player) {
@@ -185,6 +189,11 @@ export default class Game extends React.Component {
         const { blob, type, url } = audio;
         console.log("audio :>> ", audio);
 
+        axios
+            // .post("http://13.67.109.16:5050", blob)
+            .post('http://localhost:8080', blob)
+            .then((res) => console.log(`res`, res))
+            .catch((e) => console.log(`e`, e));
     }
 
     render() {
