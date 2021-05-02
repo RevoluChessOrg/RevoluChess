@@ -1,11 +1,13 @@
 import React from "react";
 
 import AudioReactRecorder, { RecordState } from "audio-react-recorder";
+// eslint-disable-next-line
 import axios from "axios";
 
 import "../index.css";
 import Board from "./board.js";
 import King from "../pieces/king";
+// eslint-disable-next-line
 import Pawn from "../pieces/pawn";
 import FallenSoldierBlock from "./fallen-soldier-block.js";
 import initialiseChessBoard from "../helpers/board-initialiser.js";
@@ -24,6 +26,9 @@ export default class Game extends React.Component {
             turn: "white",
             // ==== CUSTOM ====
             recordState: null,
+            lastOpponentMove: null,
+            isWhiteCastled: false,
+            isBlackCastled: false
         };
 
         // this.handleAudioResponse = this.handleAudioResponse.bind(this);
@@ -54,7 +59,14 @@ export default class Game extends React.Component {
         return isWrong;
     }
 
-    
+    isCastled(player) {
+        return player === 1 ? this.isWhiteCastled : this.isBlackCastled;
+    }
+
+    castled(player) {
+        if(player === 1) this.setState({isWhiteCastled: true});
+        else this.setState({isBlackCastled: true});
+    }
 
     handleClick(i) {
         const squares = [...this.state.squares];
@@ -105,8 +117,19 @@ export default class Game extends React.Component {
         const lastSelectedSquare = squares[this.state.sourceSelection];
         const mightPromoteSquare = tryPromote(lastSelectedSquare, i);
 
+        const { sourceSelection } = this.state;
+
         squares[i] = mightPromoteSquare; //squares[this.state.sourceSelection];
-        squares[this.state.sourceSelection] = null;
+        squares[sourceSelection] = null;
+
+        if(squares[i] instanceof King && squares[i].isCastling(sourceSelection, i) && !this.isCastled(this.state.player)) {
+            const isCastlingRight = i > sourceSelection;
+            const rookPos = isCastlingRight ? i + 1 : i - 2;
+            const rookDes = isCastlingRight ? sourceSelection + 1 : sourceSelection - 1;
+            squares[rookDes] = squares[rookPos]
+            squares[rookPos] = null;
+            this.castled(this.state.player);
+        }
 
         const isCheckMe = this.isCheckForPlayer(squares, this.state.player);
 
@@ -158,8 +181,10 @@ export default class Game extends React.Component {
     }
 
     async handleAudioResponse(audio) {
+        // eslint-disable-next-line
         const { blob, type, url } = audio;
         console.log("audio :>> ", audio);
+
     }
 
     render() {

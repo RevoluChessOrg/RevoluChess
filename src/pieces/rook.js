@@ -1,4 +1,5 @@
 import Piece from './piece.js';
+// eslint-disable-next-line
 import { isSameRow, isSameColumn, isSameDiagonal, isPathClean } from '../helpers'
 
 export default class Rook extends Piece {
