@@ -1,12 +1,15 @@
 import React from "react";
 
 import AudioReactRecorder, { RecordState } from "audio-react-recorder";
+import axios from "axios";
 
 import "../index.css";
 import Board from "./board.js";
 import King from "../pieces/king";
+import Pawn from "../pieces/pawn";
 import FallenSoldierBlock from "./fallen-soldier-block.js";
 import initialiseChessBoard from "../helpers/board-initialiser.js";
+import {tryPromote} from "../helpers/utils";
 
 export default class Game extends React.Component {
     constructor() {
@@ -22,25 +25,49 @@ export default class Game extends React.Component {
             // ==== CUSTOM ====
             recordState: null,
         };
+
+        // this.handleAudioResponse = this.handleAudioResponse.bind(this);
+        // this.isStartWrongSquare = this.isStartWrongSquare.bind(this);
+        // this.isMovingToSamePlayer = this.isMovingToSamePlayer.bind(this);
     }
+
+    isStartWrongSquare(square) {
+        const isWrong = !square || square.player !== this.state.player;
+
+        if (isWrong) {
+            this.setState({ status: "Wrong selection. Choose player " + this.state.player + " pieces." });
+        } else if (square) {
+            square.style = { ...square.style, backgroundColor: "" };
+        }
+
+        return isWrong;
+    }
+
+    isMovingToSamePlayer(square) {
+        const isWrong = square && square.player === this.state.player;
+        if (isWrong) {
+            this.setState({
+                status: "Wrong selection. Choose valid source and destination again.",
+                sourceSelection: -1,
+            });
+        }
+        return isWrong;
+    }
+
+    
 
     handleClick(i) {
         const squares = [...this.state.squares];
+        const square = squares[i];
 
         if (this.state.sourceSelection === -1) {
-            if (!squares[i] || squares[i].player !== this.state.player) {
-                this.setState({ status: "Wrong selection. Choose player " + this.state.player + " pieces." });
-                if (squares[i]) {
-                    squares[i].style = { ...squares[i].style, backgroundColor: "" };
-                }
-            } else {
-                squares[i].style = { ...squares[i].style, backgroundColor: "RGB(111,143,114)" }; // Emerald from http://omgchess.blogspot.com/2015/09/chess-board-color-schemes.html
-                this.setState({
-                    status: "Choose destination for the selected piece",
-                    sourceSelection: i,
-                });
-            }
-            return;
+            if (this.isStartWrongSquare(square)) return;
+            square.style = { ...square.style, backgroundColor: "RGB(111,143,114)" };
+            this.setState({
+                status: "Choose destination for the selected piece",
+                sourceSelection: i,
+            });
+            return 'success';
         }
 
         squares[this.state.sourceSelection].style = {
@@ -48,61 +75,63 @@ export default class Game extends React.Component {
             backgroundColor: "",
         };
 
-        if (squares[i] && squares[i].player === this.state.player) {
+        if (this.isMovingToSamePlayer(square)) return;
+
+        const whiteFallenSoldiers = [];
+        const blackFallenSoldiers = [];
+        const isDestEnemyOccupied = Boolean(squares[i]);
+        const isMovePossible = squares[this.state.sourceSelection].isMovePossible(
+            this.state.sourceSelection,
+            i,
+            isDestEnemyOccupied
+        );
+
+        if (!isMovePossible) {
             this.setState({
                 status: "Wrong selection. Choose valid source and destination again.",
                 sourceSelection: -1,
             });
-        } else {
-            const whiteFallenSoldiers = [];
-            const blackFallenSoldiers = [];
-            const isDestEnemyOccupied = Boolean(squares[i]);
-            const isMovePossible = squares[this.state.sourceSelection].isMovePossible(
-                this.state.sourceSelection,
-                i,
-                isDestEnemyOccupied
-            );
+            return;
+        }
 
-            if (isMovePossible) {
-                if (squares[i] !== null) {
-                    if (squares[i].player === 1) {
-                        whiteFallenSoldiers.push(squares[i]);
-                    } else {
-                        blackFallenSoldiers.push(squares[i]);
-                    }
-                }
-
-                squares[i] = squares[this.state.sourceSelection];
-                squares[this.state.sourceSelection] = null;
-
-                const isCheckMe = this.isCheckForPlayer(squares, this.state.player);
-
-                if (isCheckMe) {
-                    this.setState((oldState) => ({
-                        status: "Wrong selection. Choose valid source and destination again. Now you have a check!",
-                        sourceSelection: -1,
-                    }));
-                } else {
-                    let player = this.state.player === 1 ? 2 : 1;
-                    let turn = this.state.turn === "white" ? "black" : "white";
-
-                    this.setState((oldState) => ({
-                        sourceSelection: -1,
-                        squares,
-                        whiteFallenSoldiers: [...oldState.whiteFallenSoldiers, ...whiteFallenSoldiers],
-                        blackFallenSoldiers: [...oldState.blackFallenSoldiers, ...blackFallenSoldiers],
-                        player,
-                        status: "",
-                        turn,
-                    }));
-                }
+        if (squares[i] !== null) {
+            if (squares[i].player === 1) {
+                whiteFallenSoldiers.push(squares[i]);
             } else {
-                this.setState({
-                    status: "Wrong selection. Choose valid source and destination again.",
-                    sourceSelection: -1,
-                });
+                blackFallenSoldiers.push(squares[i]);
             }
         }
+
+        const lastSelectedSquare = squares[this.state.sourceSelection];
+        const mightPromoteSquare = tryPromote(lastSelectedSquare, i);
+
+        squares[i] = mightPromoteSquare; //squares[this.state.sourceSelection];
+        squares[this.state.sourceSelection] = null;
+
+        const isCheckMe = this.isCheckForPlayer(squares, this.state.player);
+
+        if (isCheckMe) {
+            this.setState((_oldState) => ({
+                status: "Wrong selection. Choose valid source and destination again. Now you have a check!",
+                sourceSelection: -1,
+            }));
+            return;
+        }
+
+        const player = this.state.player === 1 ? 2 : 1;
+        const turn = this.state.turn === "white" ? "black" : "white";
+
+        this.setState((oldState) => ({
+            sourceSelection: -1,
+            squares,
+            whiteFallenSoldiers: [...oldState.whiteFallenSoldiers, ...whiteFallenSoldiers],
+            blackFallenSoldiers: [...oldState.blackFallenSoldiers, ...blackFallenSoldiers],
+            player,
+            status: "",
+            turn,
+        }));
+
+        return 'success';
     }
 
     getKingPosition(squares, player) {
@@ -126,6 +155,11 @@ export default class Game extends React.Component {
                 acc || (curr && curr.getPlayer() === opponent && canPieceKillPlayersKing(curr, idx) && true),
             false
         );
+    }
+
+    async handleAudioResponse(audio) {
+        const { blob, type, url } = audio;
+        console.log("audio :>> ", audio);
     }
 
     render() {
@@ -181,14 +215,21 @@ export default class Game extends React.Component {
                 </ul> */}
 
                 <div>
-                    <button onClick={() => this.setState({ recordState: RecordState.START })}>Start</button>
-                    <button onClick={() => this.setState({ recordState: RecordState.STOP })}>Stop</button>
+                    <button
+                        style={{ fontSize: 30, background: `rgb(0, 255, 0, .2)` }}
+                        onClick={() => this.setState({ recordState: RecordState.START })}
+                    >
+                        Start
+                    </button>
+                    <button
+                        style={{ fontSize: 30, background: `rgb(255, 0, 0, .2)`, marginLeft: 5 }}
+                        onClick={() => this.setState({ recordState: RecordState.STOP })}
+                    >
+                        Stop
+                    </button>
                 </div>
-                <div>
-                    <AudioReactRecorder
-                        state={this.state.recordState}
-                        onStop={(audio) => console.log(`audio`, audio)}
-                    />
+                <div style={{ marginTop: 5 }}>
+                    <AudioReactRecorder state={this.state.recordState} onStop={this.handleAudioResponse} />
                 </div>
             </div>
         );
