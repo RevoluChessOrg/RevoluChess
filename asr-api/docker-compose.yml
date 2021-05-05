@@ -3,6 +3,6 @@ services:
     web:
         image: "asr-api"
         volumes:
-            - ../KaldiWebrtcServer/servers.json:/server/servers.json
+            - ./KaldiWebrtcServer/servers.json:/server/servers.json
         ports:
             - "8080:8080"
