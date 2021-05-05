@@ -45,6 +45,7 @@ export default class Game extends React.Component {
         // this.handleAudioResponse = this.handleAudioResponse.bind(this);
         // this.isStartWrongSquare = this.isStartWrongSquare.bind(this);
         // this.isMovingToSamePlayer = this.isMovingToSamePlayer.bind(this);
+        this.handleTrans = this.handleTrans.bind(this);
     }
 
     isStartWrongSquare(square) {
@@ -71,7 +72,7 @@ export default class Game extends React.Component {
     }
 
     isCastled(player) {
-        return player === 1 ? this.isWhiteCastled : this.isBlackCastled;
+        return player === 1 ? this.state.isWhiteCastled : this.state.isBlackCastled;
     }
 
     castled(player) {
