@@ -23,6 +23,7 @@ export default class Board extends React.Component {
         const squareShade = (isEven(i) && isEven(j)) || (!isEven(i) && !isEven(j)) ? "light-square" : "dark-square";
         squareRows.push(this.renderSquare((i * 8) + j, squareShade));
       }
+      squareRows.push(<span style={{}}>{8 - i}</span>)
       board.push(<div className="board-row" key={i}>{squareRows}</div>)
     }
 

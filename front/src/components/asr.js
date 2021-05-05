@@ -17,9 +17,14 @@ export default function ASR({ handleTrans }) {
     useEffect(() => {
         if (ui.buttonStarted === false) {
             handleTrans(ui.lastTransText);
+            
             setUi({
                 lastTransText: "💤",
                 statusFieldText: "Press start",
+                transcriptionOutputs: [
+                    ui.lastTransText,
+                    ...ui.transcriptionOutputs
+                ],
             });
         }
         // eslint-disable-next-line
@@ -49,7 +54,7 @@ export default function ASR({ handleTrans }) {
             })
             .then(function () {
                 var offer = pc.localDescription;
-                console.log(offer.sdp);
+                // console.log(offer.sdp);  
                 return fetch("http://localhost:8080/offer", {
                     body: JSON.stringify({
                         sdp: offer.sdp,
@@ -65,7 +70,7 @@ export default function ASR({ handleTrans }) {
                 return response.json();
             })
             .then(function (answer) {
-                console.log(answer.sdp);
+                // console.log(answer.sdp);
                 return pc.setRemoteDescription(answer);
             })
             .catch(function (e) {
@@ -193,7 +198,7 @@ export default function ASR({ handleTrans }) {
                         Start
                     </button>
                     <button
-                        className={`btn btn-danger d-none ${ui.buttonStarted || "d-none"}`}
+                        className={`btn btn-danger ${ui.buttonStarted || "d-none"}`}
                         id="stop"
                         onClick={stop}
                     >
@@ -220,12 +225,12 @@ export default function ASR({ handleTrans }) {
                         padding: 10,
                     }}
                 >
+                    <div className="mb-3" style={{ marginLeft: "1em" }}>{ui.lastTransText}</div>
                     {ui.transcriptionOutputs.map((trans, index) => (
-                        <span key={index} style={{ marginLeft: "1em" }}>
+                        <div key={index} style={{ marginLeft: "1em" }}>
                             {trans}
-                        </span>
+                        </div>
                     ))}
-                    <span style={{ marginLeft: "1em" }}>{ui.lastTransText}</span>
                 </div>
             </div>
         </>

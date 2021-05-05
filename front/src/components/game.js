@@ -80,17 +80,23 @@ export default class Game extends React.Component {
         else this.setState({ isBlackCastled: true });
     }
 
-    handleClick(i) {
+    async handleClick(i, delay=0) {
+        if(delay){
+            await new Promise((r) => setTimeout(r, delay));
+        }
+        console.log(`handle click: i`, i);
         const squares = [...this.state.squares];
         const square = squares[i];
 
         if (this.state.sourceSelection === -1) {
             if (this.isStartWrongSquare(square)) return;
             square.style = { ...square.style, backgroundColor: "RGB(111,143,114)" };
-            this.setState({
-                status: "Choose destination for the selected piece",
-                sourceSelection: i,
-            });
+            this.setState(
+                {
+                    status: "Choose destination for the selected piece",
+                    sourceSelection: i,
+                }
+            );
             return "success";
         }
 
@@ -198,88 +204,80 @@ export default class Game extends React.Component {
 
     // 'เรือ เอ สาม ไป บี หนึ่ง' => this.handleClick(3) ,  this.handleClick(9)
     //
-    handleTrans(words) {
-
+    async handleTrans(words) {
+        console.log(`words`, words);
         const { squares, player } = this.state;
         const isWhite = player === 1;
-        const isKing = (square) => (square instanceof King);
-        let st=0
+        const isKing = (square) => square instanceof King;
+        let st = 0;
         // king.player <== get player
         // const res = this.handleClick(3); undefined, 'success'
         const alp = ["เอ", "บี", "ซี", "ดี", "อี", "เอฟ", "จี", "เอช"];
         const num = ["หนึ่ง", "สอง", "สาม", "สี่", "ห้า", "หก", "เจ็ด", "แปด"];
-        const pieces = ["ธุลี","ก้อย","เณร","เรือดำน้ำ","ฟูฟู","ราชา"]
-        const piecesMap = {"ธุลี": Pawn,"ก้อย": Queen,"เณร": Bishop,"เรือดำน้ำ": Rook,"ฟูฟู": Knight,"ราชา": King};
+        const pieces = ["ธุลี", "ก้อย", "เณร", "เรือดำน้ำ", "ฟูฟู", "ราชา"];
+        const piecesMap = { "ธุลี": Pawn, "ก้อย": Queen, "เณร": Bishop, "เรือดำน้ำ": Rook, "ฟูฟู": Knight, "ราชา": King };
         const wordlist = words.split(" ");
         let x = -1,
             y = -1,
             res;
-        let first = []
+        let first = [];
         for (let i = 0; i < wordlist.length; i++) {
-            if(st===0){
+            // console.log(st)
+            if (st === 0) {
                 if (alp.includes(wordlist[i])) {
                     y = alp.indexOf(wordlist[i]);
-                    st = 1
-                }
-                else if(pieces.includes(wordlist[i])){
-                    for(let j = 0; j < 64; j++){
-                        if(squares[j] instanceof piecesMap[wordlist[i]] && squares.player===isWhite){
-                            first.push(j)
+                    st = 1;
+                } else if (pieces.includes(wordlist[i])) {
+                    for (let j = 0; j < 64; j++) {
+                        if (squares[j] instanceof piecesMap[wordlist[i]] && squares[j].player === player) {
+                            first.push(j);
                         }
                     }
-                    if(first.length === 0)return false
-                    st=2
+                    if (first.length === 0) return false;
+                    st = 2;
                 }
-            }
-            else if(st==1){
+            } else if (st == 1) {
                 if (num.includes(wordlist[i])) {
                     x = 7 - num.indexOf(wordlist[i]);
-                    first.push(x*8+y);
-                    st=4
-                }
-                else st=0
-            }
-            else if(st==2){
+                    first.push(x * 8 + y);
+                    st = 4;
+                } else st = 0;
+            } else if (st == 2) {
                 if (alp.includes(wordlist[i])) {
                     y = alp.indexOf(wordlist[i]);
-                    st = 3
-                }
-                else st=4;
-            }
-            else if(st==3){
+                    st = 3;
+                } else st = 4;
+            } else if (st == 3) {
                 if (num.includes(wordlist[i])) {
                     x = 7 - num.indexOf(wordlist[i]);
-                    let ch=0;
-                    for(let j=0;j<first.length;j++){
-                        if(first[j]===x*8+y){
-                            ch=1
+                    let ch = 0;
+                    for (let j = 0; j < first.length; j++) {
+                        if (first[j] === x * 8 + y) {
+                            ch = 1;
                             break;
                         }
                     }
-                    if(ch===0)return false;
-                    first=[]
-                    first.push(x*8+y);
+                    if (ch === 0) return false;
+                    first = [];
+                    first.push(x * 8 + y);
                 }
-                st=4;
-            }
-            else if(st==4){
+                st = 4;
+            } else if (st == 4) {
                 if (alp.includes(wordlist[i])) {
                     y = alp.indexOf(wordlist[i]);
-                    st = 5
+                    st = 5;
                 }
-            }
-            else if(st==5){
+            } else if (st == 5) {
                 if (num.includes(wordlist[i])) {
                     x = 7 - num.indexOf(wordlist[i]);
-                    for(let k = 0;k<first.length;k++){
-                        res = this.handleClick(first[k]);
-                        if(res==='success'){
-                            res = this.handleClick(x*8+y)
-                            if(res==='success')return true;
+                    for (let k = 0; k < first.length; k++) {
+                        res = await this.handleClick(first[k], 500);
+                        if (res === "success") {
+                            res = await this.handleClick(x * 8 + y, 500);
+                            if (res === "success") return true;
                         }
                     }
-                }
-                else return false
+                } else return false;
             }
         }
         return false;
