@@ -1,0 +1,1102 @@
+# lattice-scale --inv-acoustic-scale=17 "ark:gunzip -c exp/chain/tdnn1r_sp_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt ark:- ark,t:exp/chain/tdnn1r_sp_online/decode_dev/scoring/17.1.0.tra 
+# Started at Sun May  2 16:21:20 UTC 2021
+#
+lattice-add-penalty --word-ins-penalty=1.0 ark:- ark:- 
+lattice-best-path --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt ark:- ark,t:exp/chain/tdnn1r_sp_online/decode_dev/scoring/17.1.0.tra 
+lattice-scale --inv-acoustic-scale=17 'ark:gunzip -c exp/chain/tdnn1r_sp_online/decode_dev/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0002, best cost 64.148 + -77.5772 = -13.4292 over 71 frames.
+M6131010121_0002 ก้อย กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0003, best cost 63.2301 + -80.8429 = -17.6128 over 71 frames.
+M6131010121_0003 ธุลี เดิน ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0004, best cost 58.8346 + -69.9864 = -11.1517 over 66 frames.
+M6131010121_0004 ธุลี ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0006, best cost 74.0613 + -84.1947 = -10.1334 over 70 frames.
+M6131010121_0006 เอ ธุลี ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0007, best cost 63.0084 + -89.0342 = -26.0259 over 71 frames.
+M6131010121_0007 ธุลี เดิน ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0008, best cost 69.9512 + -85.5045 = -15.5533 over 69 frames.
+M6131010121_0008 เอ ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0009, best cost 74.2526 + -98.4975 = -24.245 over 80 frames.
+M6131010121_0009 เดิน ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0010, best cost 82.7715 + -98.4787 = -15.7072 over 92 frames.
+M6131010121_0010 ธุลี อี ห้า เดิน อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0011, best cost 80.4243 + -104.251 = -23.8262 over 85 frames.
+M6131010121_0011 ธุลี อี ห้า เดิน ไป อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0012, best cost 73.2005 + -100.279 = -27.0781 over 77 frames.
+M6131010121_0012 ธุลี บี สาม ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0013, best cost 81.8819 + -108.23 = -26.3476 over 87 frames.
+M6131010121_0013 ธุลี บี สาม เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0014, best cost 64.9457 + -92.7639 = -27.8182 over 72 frames.
+M6131010121_0014 ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0015, best cost 76.5178 + -102.313 = -25.7952 over 82 frames.
+M6131010121_0015 ธุลี เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0017, best cost 92.7156 + -111.895 = -19.1793 over 93 frames.
+M6131010121_0017 เดิน ไป ดี สี่ ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0018, best cost 57.2156 + -73.304 = -16.0884 over 61 frames.
+M6131010121_0018 ก้อย กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0019, best cost 63.3661 + -88.5758 = -25.2097 over 65 frames.
+M6131010121_0019 เดิน ก้อย ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0020, best cost 57.9871 + -73.0706 = -15.0835 over 61 frames.
+M6131010121_0020 ก้อย กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0022, best cost 62.7258 + -76.2632 = -13.5374 over 68 frames.
+M6131010121_0022 ก้อย ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0023, best cost 62.1879 + -84.8159 = -22.628 over 67 frames.
+M6131010121_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0024, best cost 55.6068 + -75.0428 = -19.436 over 58 frames.
+M6131010121_0024 ก้อย ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0025, best cost 59.1411 + -84.2447 = -25.1035 over 62 frames.
+M6131010121_0025 ก้อย เดิน ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0026, best cost 60.8868 + -67.4179 = -6.53104 over 64 frames.
+M6131010121_0026 ก้อย เดิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0027, best cost 65.6146 + -80.9416 = -15.327 over 72 frames.
+M6131010121_0027 ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0028, best cost 54.6832 + -79.9328 = -25.2496 over 57 frames.
+M6131010121_0028 ก้อย ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0029, best cost 62.9428 + -87.2435 = -24.3007 over 67 frames.
+M6131010121_0029 ก้อย เดิน ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0031, best cost 86.7412 + -108.282 = -21.5412 over 83 frames.
+M6131010121_0031 ก้อย อี หก เดิน ไป จี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0032, best cost 85.4197 + -104.433 = -19.0128 over 93 frames.
+M6131010121_0032 ก้อย จี ห้า กิน เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0033, best cost 84.5142 + -112.021 = -27.5065 over 85 frames.
+M6131010121_0033 เดิน ก้อย จี ห้า ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0034, best cost 54.7655 + -71.5916 = -16.8261 over 56 frames.
+M6131010121_0034 เณร กิน เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0035, best cost 66.6814 + -87.2743 = -20.5929 over 70 frames.
+M6131010121_0035 เณร เดิน ไป เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0036, best cost 56.8748 + -73.114 = -16.2392 over 61 frames.
+M6131010121_0036 เณร กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0037, best cost 59.9874 + -83.4166 = -23.4292 over 64 frames.
+M6131010121_0037 เณร เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0038, best cost 56.149 + -67.021 = -10.872 over 57 frames.
+M6131010121_0038 เณร กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0039, best cost 72.9889 + -83.7325 = -10.7436 over 80 frames.
+M6131010121_0039 เดิน เณร ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0040, best cost 56.9857 + -78.4492 = -21.4635 over 58 frames.
+M6131010121_0040 เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0041, best cost 62.806 + -86.3925 = -23.5865 over 63 frames.
+M6131010121_0041 เดิน เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0043, best cost 61.7726 + -81.5428 = -19.7703 over 64 frames.
+M6131010121_0043 เณร เดิน ไป อี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0044, best cost 45.8066 + -61.0401 = -15.2335 over 46 frames.
+M6131010121_0044 เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0045, best cost 58.5574 + -79.5555 = -20.9982 over 61 frames.
+M6131010121_0045 เดิน เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0046, best cost 63.4868 + -91.1148 = -27.628 over 67 frames.
+M6131010121_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0047, best cost 73.6716 + -96.8641 = -23.1925 over 75 frames.
+M6131010121_0047 เณร เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0048, best cost 82.1997 + -101.172 = -18.9722 over 76 frames.
+M6131010121_0048 เณร บี เจ็ด กิน เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0049, best cost 76.2935 + -96.0726 = -19.779 over 71 frames.
+M6131010121_0049 เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0050, best cost 58.7011 + -74.1931 = -15.492 over 60 frames.
+M6131010121_0050 เรือดำน้ำ กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0051, best cost 70.6096 + -89.7262 = -19.1166 over 77 frames.
+M6131010121_0051 เรือดำน้ำ เดิน ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0053, best cost 77.2193 + -97.3078 = -20.0886 over 85 frames.
+M6131010121_0053 เรือดำน้ำ เดิน ไป บี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0054, best cost 58.4157 + -78.8315 = -20.4158 over 66 frames.
+M6131010121_0054 เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0055, best cost 72.9221 + -91.765 = -18.8429 over 82 frames.
+M6131010121_0055 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0056, best cost 64.553 + -80.7683 = -16.2154 over 68 frames.
+M6131010121_0056 เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0057, best cost 74.2083 + -94.0075 = -19.7992 over 77 frames.
+M6131010121_0057 เดิน เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0058, best cost 82.4424 + -105.153 = -22.7103 over 92 frames.
+M6131010121_0058 เรือดำน้ำ อี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0059, best cost 90.562 + -125.275 = -34.7126 over 99 frames.
+M6131010121_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0060, best cost 90.5257 + -117.768 = -27.2423 over 86 frames.
+M6131010121_0060 เรือดำน้ำ เอฟ เจ็ด กิน เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0061, best cost 91.885 + -123.459 = -31.5736 over 91 frames.
+M6131010121_0061 เรือดำน้ำ เอฟ เจ็ด เดิน ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0062, best cost 69.8872 + -88.1072 = -18.22 over 76 frames.
+M6131010121_0062 เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0063, best cost 81.1891 + -103.705 = -22.5154 over 89 frames.
+M6131010121_0063 เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0064, best cost 84.9629 + -108.646 = -23.683 over 92 frames.
+M6131010121_0064 เรือดำน้ำ บี เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0065, best cost 88.9384 + -116.799 = -27.8609 over 97 frames.
+M6131010121_0065 เดิน เรือดำน้ำ เอ หก ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0066, best cost 60.0765 + -78.8009 = -18.7244 over 63 frames.
+M6131010121_0066 ฟูฟู กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0067, best cost 65.9231 + -94.368 = -28.445 over 68 frames.
+M6131010121_0067 เดิน ฟูฟู ไป อี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0068, best cost 65.699 + -81.0912 = -15.3921 over 70 frames.
+M6131010121_0068 ฟูฟู กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0069, best cost 67.8851 + -92.7739 = -24.8887 over 72 frames.
+M6131010121_0069 เดิน ฟูฟู ไป บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0071, best cost 65.5223 + -82.7372 = -17.2149 over 70 frames.
+M6131010121_0071 ฟูฟู เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0073, best cost 67.5396 + -87.6712 = -20.1316 over 71 frames.
+M6131010121_0073 ฟูฟู เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0074, best cost 81.0053 + -100.011 = -19.0055 over 90 frames.
+M6131010121_0074 ฟูฟู ดี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0075, best cost 86.9717 + -106.988 = -20.0164 over 92 frames.
+M6131010121_0075 เดิน ฟูฟู ดี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0076, best cost 82.5439 + -104.185 = -21.6411 over 83 frames.
+M6131010121_0076 ฟูฟู อี แปด กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0077, best cost 92.9136 + -119.067 = -26.1536 over 99 frames.
+M6131010121_0077 เดิน ฟูฟู ดี สาม ไป เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0078, best cost 74.652 + -94.0184 = -19.3664 over 80 frames.
+M6131010121_0078 ฟูฟู อี หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0079, best cost 80.1664 + -105.096 = -24.9299 over 81 frames.
+M6131010121_0079 ฟูฟู อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0080, best cost 78.8595 + -119.07 = -40.2103 over 87 frames.
+M6131010121_0080 ฟูฟู เอฟ เจ็ด ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0081, best cost 88.1808 + -132.294 = -44.1135 over 96 frames.
+M6131010121_0081 ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0082, best cost 62.0666 + -63.4796 = -1.41299 over 68 frames.
+M6131010121_0082 ราชา กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0084, best cost 58.065 + -75.6117 = -17.5468 over 62 frames.
+M6131010121_0084 ราชา กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0085, best cost 61.9626 + -82.2605 = -20.2979 over 66 frames.
+M6131010121_0085 ราชา เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0086, best cost 64.2717 + -73.7338 = -9.46205 over 68 frames.
+M6131010121_0086 ราชา กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0087, best cost 64.5615 + -84.9276 = -20.3661 over 69 frames.
+M6131010121_0087 ราชา เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0088, best cost 68.659 + -87.9467 = -19.2877 over 70 frames.
+M6131010121_0088 เดิน ราชา ไป ดี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0089, best cost 70.3946 + -96.3669 = -25.9723 over 78 frames.
+M6131010121_0089 เดิน ราชา ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0090, best cost 83.9259 + -109.794 = -25.8679 over 87 frames.
+M6131010121_0090 ก้อย เดิน ราชา ไป เอฟ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0091, best cost 59.9947 + -78.9381 = -18.9434 over 62 frames.
+M6131010121_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0092, best cost 58.4306 + -78.576 = -20.1454 over 60 frames.
+M6131010121_0092 เอ สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0093, best cost 59.2132 + -71.2739 = -12.0607 over 63 frames.
+M6131010121_0093 อี สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0094, best cost 54.2051 + -66.1981 = -11.993 over 55 frames.
+M6131010121_0094 อี สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0095, best cost 55.6018 + -72.2842 = -16.6823 over 54 frames.
+M6131010121_0095 ซี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0096, best cost 54.8997 + -67.6839 = -12.7842 over 54 frames.
+M6131010121_0096 ซี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0097, best cost 55.535 + -73.2913 = -17.7563 over 56 frames.
+M6131010121_0097 อี เจ็ด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0098, best cost 57.0162 + -68.0955 = -11.0793 over 57 frames.
+M6131010121_0098 อี แปด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0099, best cost 53.6805 + -65.833 = -12.1525 over 56 frames.
+M6131010121_0099 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0100, best cost 57.1787 + -74.4747 = -17.296 over 60 frames.
+M6131010121_0100 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0101, best cost 65.4234 + -81.2804 = -15.857 over 71 frames.
+M6131010121_0101 เอฟ สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0102, best cost 56.8081 + -74.9591 = -18.151 over 62 frames.
+M6131010121_0102 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0103, best cost 56.1467 + -64.907 = -8.76034 over 59 frames.
+M6131010121_0103 จี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0104, best cost 58.5325 + -70.2427 = -11.7102 over 63 frames.
+M6131010121_0104 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0105, best cost 51.961 + -69.4947 = -17.5337 over 55 frames.
+M6131010121_0105 เอช หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0106, best cost 58.6773 + -73.5784 = -14.9011 over 62 frames.
+M6131010121_0106 เอช สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0107, best cost 72.3768 + -98.781 = -26.4042 over 79 frames.
+M6131010121_0107 แต่งตั้ง เอฟ เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0109, best cost 64.8674 + -89.0511 = -24.1837 over 68 frames.
+M6131010121_0109 แต่งตั้ง ซี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0110, best cost 59.1861 + -89.5592 = -30.3731 over 62 frames.
+M6131010121_0110 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0111, best cost 56.6105 + -80.0733 = -23.4627 over 59 frames.
+M6131010121_0111 แต่งตั้ง อี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0113, best cost 64.8862 + -88.3765 = -23.4904 over 67 frames.
+M6131010121_0113 แต่งตั้ง จี เจ็ด เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0114, best cost 68.7015 + -93.2788 = -24.5773 over 72 frames.
+M6131010121_0114 แต่งตั้ง เอช สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0115, best cost 66.0707 + -97.614 = -31.5433 over 72 frames.
+M6131010121_0115 แต่งตั้ง อี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0116, best cost 64.7342 + -96.2553 = -31.5211 over 70 frames.
+M6131010121_0116 แต่งตั้ง บี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0117, best cost 68.7102 + -103.443 = -34.7331 over 77 frames.
+M6131010121_0117 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0118, best cost 68.0859 + -98.4059 = -30.3201 over 74 frames.
+M6131010121_0118 แต่งตั้ง ดี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0119, best cost 61.3219 + -85.3214 = -23.9995 over 66 frames.
+M6131010121_0119 แต่งตั้ง อี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0120, best cost 67.6355 + -95.3076 = -27.6721 over 75 frames.
+M6131010121_0120 แต่งตั้ง เอฟ สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131010121_0121, best cost 64.6546 + -96.6982 = -32.0435 over 72 frames.
+M6131010121_0121 แต่งตั้ง ซี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0002, best cost 69.6824 + -62.1098 = 7.57264 over 70 frames.
+M6131034221_0002 ซี หนึ่ง กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0003, best cost 64.6163 + -72.8733 = -8.25694 over 73 frames.
+M6131034221_0003 ธุลี เดิน ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0004, best cost 67.1919 + -60.4984 = 6.69349 over 67 frames.
+M6131034221_0004 อี ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0006, best cost 60.9266 + -57.6688 = 3.25785 over 65 frames.
+M6131034221_0006 ก้อย ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0007, best cost 59.5426 + -60.6182 = -1.07553 over 66 frames.
+M6131034221_0007 ธุลี เดิน ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0008, best cost 59.7179 + -54.0046 = 5.71326 over 64 frames.
+M6131034221_0008 ก้อย ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0009, best cost 63.1614 + -60.1627 = 2.99866 over 68 frames.
+M6131034221_0009 ก้อย เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0010, best cost 78.1974 + -66.2689 = 11.9285 over 87 frames.
+M6131034221_0010 อี ห้า เดิน ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0011, best cost 55.7467 + -46.5033 = 9.24341 over 66 frames.
+M6131034221_0011 ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0012, best cost 69.8876 + -68.3058 = 1.5818 over 74 frames.
+M6131034221_0012 ธุลี บี สาม ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0013, best cost 79.3552 + -68.0933 = 11.2619 over 84 frames.
+M6131034221_0013 อี สาม เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0014, best cost 68.4114 + -55.1618 = 13.2496 over 77 frames.
+M6131034221_0014 ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0015, best cost 67.7192 + -55.7606 = 11.9586 over 76 frames.
+M6131034221_0015 ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0017, best cost 79.7328 + -71.6612 = 8.07157 over 81 frames.
+M6131034221_0017 เดิน ฟูฟู ดี สาม ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0018, best cost 51.2309 + -54.2587 = -3.02787 over 58 frames.
+M6131034221_0018 ก้อย กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0019, best cost 53.2556 + -66.045 = -12.7894 over 52 frames.
+M6131034221_0019 เดิน ก้อย ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0020, best cost 51.7487 + -56.2636 = -4.51486 over 52 frames.
+M6131034221_0020 ก้อย กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0022, best cost 47.4766 + -60.4602 = -12.9837 over 46 frames.
+M6131034221_0022 ก้อย ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0023, best cost 50.4044 + -62.4182 = -12.0138 over 50 frames.
+M6131034221_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0024, best cost 42.437 + -49.1451 = -6.70805 over 39 frames.
+M6131034221_0024 ก้อย ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0025, best cost 49.9916 + -57.826 = -7.83445 over 49 frames.
+M6131034221_0025 ก้อย เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0026, best cost 50.0038 + -53.2926 = -3.28874 over 51 frames.
+M6131034221_0026 ก้อย เดิน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0027, best cost 51.0585 + -64.2707 = -13.2122 over 51 frames.
+M6131034221_0027 ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0028, best cost 48.0191 + -50.9648 = -2.94573 over 48 frames.
+M6131034221_0028 ก้อย ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0029, best cost 56.193 + -60.4682 = -4.27524 over 57 frames.
+M6131034221_0029 ก้อย เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0031, best cost 67.9765 + -67.3078 = 0.668655 over 74 frames.
+M6131034221_0031 ก้อย เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0032, best cost 57.7097 + -57.2916 = 0.418152 over 61 frames.
+M6131034221_0032 ก้อย จี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0033, best cost 76.0853 + -76.932 = -0.84671 over 72 frames.
+M6131034221_0033 เดิน ก้อย จี ห้า ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0034, best cost 47.5919 + -39.3523 = 8.23959 over 55 frames.
+M6131034221_0034 เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0035, best cost 50.3531 + -48.0129 = 2.34021 over 48 frames.
+M6131034221_0035 เณร เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0036, best cost 45.0903 + -39.1537 = 5.93657 over 44 frames.
+M6131034221_0036 เณร กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0037, best cost 53.0559 + -49.2177 = 3.83817 over 54 frames.
+M6131034221_0037 เณร เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0038, best cost 49.2176 + -41.9132 = 7.30434 over 47 frames.
+M6131034221_0038 เณร กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0039, best cost 54.5633 + -49.3849 = 5.17838 over 56 frames.
+M6131034221_0039 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0040, best cost 40.1676 + -36.2746 = 3.89302 over 43 frames.
+M6131034221_0040 อี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0041, best cost 59.6956 + -51.4275 = 8.26816 over 63 frames.
+M6131034221_0041 ก้อย เดิน ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0043, best cost 45.714 + -44.0932 = 1.62085 over 50 frames.
+M6131034221_0043 เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0044, best cost 37.8878 + -30.338 = 7.54975 over 41 frames.
+M6131034221_0044 เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0045, best cost 49.1797 + -48.0423 = 1.13746 over 55 frames.
+M6131034221_0045 เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0046, best cost 62.0985 + -59.474 = 2.62452 over 65 frames.
+M6131034221_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0047, best cost 73.6716 + -64.2574 = 9.4142 over 75 frames.
+M6131034221_0047 เณร เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0048, best cost 60.9632 + -57.1474 = 3.8159 over 72 frames.
+M6131034221_0048 เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0049, best cost 80.4524 + -81.8011 = -1.34872 over 77 frames.
+M6131034221_0049 เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0050, best cost 62.4844 + -56.6974 = 5.78696 over 69 frames.
+M6131034221_0050 เรือดำน้ำ เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0051, best cost 63.4206 + -65.1857 = -1.76516 over 66 frames.
+M6131034221_0051 เรือดำน้ำ เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0053, best cost 64.8069 + -62.1539 = 2.65301 over 68 frames.
+M6131034221_0053 เรือดำน้ำ เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0054, best cost 56.3609 + -58.1628 = -1.80189 over 62 frames.
+M6131034221_0054 เรือดำน้ำ ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0055, best cost 65.2984 + -61.25 = 4.04841 over 71 frames.
+M6131034221_0055 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0056, best cost 71.6101 + -57.8283 = 13.7818 over 84 frames.
+M6131034221_0056 เรือดำน้ำ ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0057, best cost 67.8489 + -58.225 = 9.62387 over 68 frames.
+M6131034221_0057 ก้อย เดิน เรือดำน้ำ ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0058, best cost 61.6949 + -66.7646 = -5.06966 over 80 frames.
+M6131034221_0058 เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0059, best cost 82.2452 + -81.4959 = 0.749336 over 87 frames.
+M6131034221_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0060, best cost 66.0649 + -67.6833 = -1.61834 over 76 frames.
+M6131034221_0060 เรือดำน้ำ ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0061, best cost 70.9473 + -71.0241 = -0.0768127 over 78 frames.
+M6131034221_0061 เรือดำน้ำ เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0062, best cost 72.2934 + -65.9566 = 6.33675 over 81 frames.
+M6131034221_0062 เรือดำน้ำ เอ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0063, best cost 75.7202 + -71.1516 = 4.56861 over 85 frames.
+M6131034221_0063 เดิน เรือดำน้ำ ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0064, best cost 73.852 + -70.9543 = 2.89774 over 76 frames.
+M6131034221_0064 เรือดำน้ำ บี เจ็ด ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0065, best cost 71.1186 + -60.7721 = 10.3465 over 76 frames.
+M6131034221_0065 เดิน เรือดำน้ำ เอ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0066, best cost 46.4072 + -41.8384 = 4.56873 over 51 frames.
+M6131034221_0066 เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0067, best cost 61.7382 + -55.512 = 6.22615 over 65 frames.
+M6131034221_0067 ก้อย เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0068, best cost 48.4966 + -41.2816 = 7.21497 over 53 frames.
+M6131034221_0068 แต่งตั้ง ดี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0069, best cost 59.577 + -58.7065 = 0.870499 over 70 frames.
+M6131034221_0069 เอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0071, best cost 55.3011 + -54.909 = 0.392109 over 63 frames.
+M6131034221_0071 หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0073, best cost 66.278 + -54.7999 = 11.4781 over 66 frames.
+M6131034221_0073 แต่งตั้ง เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0074, best cost 75.2078 + -66.9092 = 8.29868 over 79 frames.
+M6131034221_0074 ฟูฟู ดี สาม ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0075, best cost 82.6198 + -81.4604 = 1.15938 over 89 frames.
+M6131034221_0075 แต่งตั้ง ดี สาม ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0076, best cost 74.2252 + -65.0353 = 9.18987 over 71 frames.
+M6131034221_0076 ฟูฟู อี แปด กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0077, best cost 80.3227 + -77.9691 = 2.35359 over 81 frames.
+M6131034221_0077 เดิน ฟูฟู ดี สาม ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0078, best cost 69.1509 + -63.0579 = 6.09298 over 76 frames.
+M6131034221_0078 อี หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0079, best cost 79.0586 + -66.9299 = 12.1286 over 83 frames.
+M6131034221_0079 อี หก เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0080, best cost 79.5048 + -77.9228 = 1.58202 over 88 frames.
+M6131034221_0080 เอฟ เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0081, best cost 76.3973 + -77.4222 = -1.02489 over 79 frames.
+M6131034221_0081 ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0082, best cost 59.9872 + -53.0199 = 6.96725 over 65 frames.
+M6131034221_0082 ราชา กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0084, best cost 52.6162 + -49.0071 = 3.60912 over 60 frames.
+M6131034221_0084 ราชา กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0085, best cost 61.3392 + -60.2577 = 1.08149 over 63 frames.
+M6131034221_0085 ราชา เดิน ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0086, best cost 55.2785 + -52.3568 = 2.92168 over 59 frames.
+M6131034221_0086 ราชา กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0087, best cost 60.4026 + -61.4812 = -1.07855 over 63 frames.
+M6131034221_0087 ราชา เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0088, best cost 55.4278 + -54.817 = 0.610741 over 55 frames.
+M6131034221_0088 เดิน ราชา ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0089, best cost 59.9974 + -60.8651 = -0.867683 over 63 frames.
+M6131034221_0089 เดิน ราชา ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0090, best cost 59.4091 + -53.1862 = 6.22292 over 60 frames.
+M6131034221_0090 เดิน ราชา ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0091, best cost 45.4376 + -46.6279 = -1.19033 over 41 frames.
+M6131034221_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0092, best cost 48.7256 + -54.9995 = -6.2739 over 46 frames.
+M6131034221_0092 เอ สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0093, best cost 55.7465 + -55.7565 = -0.0100517 over 58 frames.
+M6131034221_0093 อี สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0094, best cost 53.0423 + -51.3594 = 1.68288 over 54 frames.
+M6131034221_0094 เอ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0095, best cost 50.299 + -45.5594 = 4.73956 over 50 frames.
+M6131034221_0095 อี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0096, best cost 55.0668 + -47.5509 = 7.51588 over 58 frames.
+M6131034221_0096 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0097, best cost 49.2967 + -47.8631 = 1.43355 over 47 frames.
+M6131034221_0097 อี เจ็ด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0098, best cost 48.638 + -44.188 = 4.45 over 54 frames.
+M6131034221_0098 อี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0099, best cost 47.4422 + -44.0174 = 3.4248 over 47 frames.
+M6131034221_0099 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0100, best cost 58.564 + -60.2579 = -1.69388 over 62 frames.
+M6131034221_0100 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0101, best cost 50.8663 + -51.3873 = -0.520912 over 50 frames.
+M6131034221_0101 เอฟ สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0102, best cost 51.9551 + -52.7367 = -0.781567 over 55 frames.
+M6131034221_0102 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0103, best cost 51.6853 + -55.3505 = -3.66525 over 52 frames.
+M6131034221_0103 อี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0104, best cost 55.0668 + -50.1324 = 4.93443 over 58 frames.
+M6131034221_0104 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0105, best cost 49.8815 + -48.9376 = 0.943901 over 52 frames.
+M6131034221_0105 เอช หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0106, best cost 54.7277 + -59.2651 = -4.53743 over 59 frames.
+M6131034221_0106 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0107, best cost 59.3831 + -63.4894 = -4.10628 over 63 frames.
+M6131034221_0107 แต่งตั้ง อี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0109, best cost 55.5824 + -52.2705 = 3.31193 over 58 frames.
+M6131034221_0109 แต่งตั้ง บี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0110, best cost 57.311 + -55.2816 = 2.02934 over 67 frames.
+M6131034221_0110 แต่งตั้ง ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0111, best cost 59.0482 + -60.5419 = -1.49376 over 63 frames.
+M6131034221_0111 แต่งตั้ง บี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0113, best cost 66.3573 + -63.6783 = 2.67903 over 65 frames.
+M6131034221_0113 แต่งตั้ง อี เจ็ด เป็น 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0114, best cost 55.7819 + -60.2244 = -4.44258 over 57 frames.
+M6131034221_0114 แต่งตั้ง เอฟ สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0115, best cost 64.2354 + -65.2616 = -1.02618 over 64 frames.
+M6131034221_0115 แต่งตั้ง เอฟ สอง เป็น 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0116, best cost 54.5384 + -60.9803 = -6.44192 over 63 frames.
+M6131034221_0116 แต่งตั้ง ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0117, best cost 52.459 + -56.7626 = -4.30363 over 60 frames.
+M6131034221_0117 แต่งตั้ง ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0118, best cost 67.6748 + -63.4608 = 4.21397 over 69 frames.
+M6131034221_0118 แต่งตั้ง บี สอง เป็น 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0119, best cost 64.7664 + -64.3149 = 0.4515 over 70 frames.
+M6131034221_0119 แต่งตั้ง บี สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0120, best cost 76.019 + -71.2115 = 4.80741 over 81 frames.
+M6131034221_0120 แต่งตั้ง เอฟ สอง เป็น 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131034221_0121, best cost 57.311 + -57.5444 = -0.233444 over 67 frames.
+M6131034221_0121 แต่งตั้ง ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0002, best cost 69.6932 + -83.1859 = -13.4927 over 79 frames.
+M6131045121_0002 ก้อย กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0003, best cost 87.1386 + -106.486 = -19.3471 over 88 frames.
+M6131045121_0003 เอ ธุลี เดิน ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0004, best cost 64.3798 + -84.5299 = -20.1501 over 74 frames.
+M6131045121_0004 ธุลี ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0006, best cost 66.0911 + -81.7123 = -15.6212 over 63 frames.
+M6131045121_0006 แต่งตั้ง ดี ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0007, best cost 70.0067 + -83.767 = -13.7603 over 65 frames.
+M6131045121_0007 แต่งตั้ง ดี เดิน ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0008, best cost 53.6673 + -77.327 = -23.6597 over 63 frames.
+M6131045121_0008 ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0009, best cost 83.164 + -101.454 = -18.2901 over 88 frames.
+M6131045121_0009 ก้อย เดิน ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0010, best cost 88.9067 + -106.38 = -17.4731 over 99 frames.
+M6131045121_0010 อี ห้า เดิน อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0011, best cost 101.809 + -131.119 = -29.3103 over 114 frames.
+M6131045121_0011 อี ห้า เดิน ไป อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0012, best cost 94.814 + -129.224 = -34.4103 over 108 frames.
+M6131045121_0012 แต่งตั้ง ดี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0013, best cost 107.299 + -142.517 = -35.2173 over 122 frames.
+M6131045121_0013 อี สาม เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0014, best cost 76.037 + -105.827 = -29.7902 over 88 frames.
+M6131045121_0014 ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0015, best cost 102.391 + -127.059 = -24.668 over 117 frames.
+M6131045121_0015 อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0017, best cost 108.364 + -129.243 = -20.8792 over 111 frames.
+M6131045121_0017 ก้อย เดิน ไป บี สี่ ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0018, best cost 60.6813 + -86.5894 = -25.9081 over 66 frames.
+M6131045121_0018 ก้อย กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0019, best cost 76.9813 + -100.161 = -23.1795 over 79 frames.
+M6131045121_0019 ก้อย เดิน ก้อย ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0020, best cost 57.2939 + -83.8529 = -26.559 over 60 frames.
+M6131045121_0020 ก้อย กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0022, best cost 72.4299 + -87.4618 = -15.0319 over 82 frames.
+M6131045121_0022 ก้อย ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0023, best cost 82.2892 + -107.365 = -25.0762 over 96 frames.
+M6131045121_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0024, best cost 68.7766 + -95.5092 = -26.7326 over 77 frames.
+M6131045121_0024 ก้อย ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0025, best cost 73.6972 + -107.186 = -33.4888 over 83 frames.
+M6131045121_0025 ก้อย เดิน ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0026, best cost 69.2046 + -72.3378 = -3.13319 over 76 frames.
+M6131045121_0026 ก้อย เดิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0027, best cost 69.7735 + -85.7187 = -15.9452 over 78 frames.
+M6131045121_0027 ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0028, best cost 71.3188 + -90.8807 = -19.5619 over 81 frames.
+M6131045121_0028 ก้อย ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0029, best cost 80.2705 + -105.984 = -25.7139 over 92 frames.
+M6131045121_0029 ก้อย เดิน ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0031, best cost 98.4016 + -123.362 = -24.96 over 105 frames.
+M6131045121_0031 ก้อย อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0032, best cost 86.8297 + -110.499 = -23.6694 over 94 frames.
+M6131045121_0032 ก้อย จี ห้า กิน เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0033, best cost 94.6636 + -118.573 = -23.9091 over 94 frames.
+M6131045121_0033 ก้อย เดิน ก้อย จี ห้า ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0034, best cost 73.5878 + -84.1474 = -10.5596 over 74 frames.
+M6131045121_0034 เอช หนึ่ง กิน เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0035, best cost 73.3117 + -85.8664 = -12.5547 over 82 frames.
+M6131045121_0035 เณร เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0036, best cost 59.8568 + -75.2342 = -15.3774 over 72 frames.
+M6131045121_0036 แต่งตั้ง บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0037, best cost 68.3052 + -95.368 = -27.0628 over 76 frames.
+M6131045121_0037 เณร เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0038, best cost 65.16 + -75.5893 = -10.4293 over 70 frames.
+M6131045121_0038 เณร กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0039, best cost 79.6736 + -101.122 = -21.4484 over 84 frames.
+M6131045121_0039 ก้อย เดิน เณร ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0040, best cost 61.8378 + -80.5475 = -18.7098 over 65 frames.
+M6131045121_0040 เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0041, best cost 84.0468 + -107.143 = -23.0957 over 88 frames.
+M6131045121_0041 ก้อย เดิน เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0043, best cost 73.5561 + -82.4485 = -8.8924 over 81 frames.
+M6131045121_0043 เณร เดิน ไป อี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0044, best cost 61.0549 + -81.1837 = -20.1287 over 68 frames.
+M6131045121_0044 เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0045, best cost 75.6393 + -101.644 = -26.0042 over 80 frames.
+M6131045121_0045 ก้อย เดิน เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0046, best cost 79.4282 + -106.125 = -26.697 over 90 frames.
+M6131045121_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0047, best cost 81.9884 + -107.456 = -25.4679 over 87 frames.
+M6131045121_0047 เณร เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0048, best cost 92.1801 + -108.986 = -16.8061 over 90 frames.
+M6131045121_0048 เณร บี เจ็ด กิน เอช 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0049, best cost 101.477 + -130.4 = -28.9234 over 105 frames.
+M6131045121_0049 ก้อย เดิน เณร บี เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0050, best cost 74.6435 + -86.1883 = -11.5448 over 83 frames.
+M6131045121_0050 เรือดำน้ำ กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0051, best cost 88.9528 + -110.85 = -21.8971 over 89 frames.
+M6131045121_0051 เอ เรือดำน้ำ เดิน ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0053, best cost 98.138 + -116.392 = -18.2538 over 100 frames.
+M6131045121_0053 เอช เรือดำน้ำ เดิน ไป บี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0054, best cost 72.2786 + -92.2365 = -19.9579 over 86 frames.
+M6131045121_0054 เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0055, best cost 82.3803 + -121.613 = -39.2332 over 90 frames.
+M6131045121_0055 ก้อย เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0056, best cost 78.84 + -100.624 = -21.7845 over 82 frames.
+M6131045121_0056 เอ เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0057, best cost 93.3696 + -119.239 = -25.8696 over 99 frames.
+M6131045121_0057 ก้อย เดิน เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0058, best cost 102.864 + -128.955 = -26.0912 over 107 frames.
+M6131045121_0058 เอ เรือดำน้ำ อี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0059, best cost 98.8808 + -120.399 = -21.518 over 111 frames.
+M6131045121_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0060, best cost 99.9829 + -123.914 = -23.9316 over 99 frames.
+M6131045121_0060 เรือดำน้ำ เอฟ เจ็ด กิน เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0061, best cost 102.283 + -144.097 = -41.8142 over 106 frames.
+M6131045121_0061 เรือดำน้ำ เอฟ เจ็ด เดิน ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0062, best cost 80.6111 + -104.713 = -24.102 over 93 frames.
+M6131045121_0062 เรือดำน้ำ เอ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0063, best cost 87.1807 + -118.042 = -30.8615 over 92 frames.
+M6131045121_0063 ก้อย เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0064, best cost 97.4376 + -135.213 = -37.7758 over 110 frames.
+M6131045121_0064 เรือดำน้ำ บี เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0065, best cost 106.02 + -144.708 = -38.6874 over 116 frames.
+M6131045121_0065 ก้อย เดิน เรือดำน้ำ เอ หก ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0066, best cost 83.4052 + -99.9118 = -16.5066 over 83 frames.
+M6131045121_0066 เอ ฟูฟู กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0067, best cost 90.8462 + -121.627 = -30.7811 over 99 frames.
+M6131045121_0067 ก้อย เดิน ฟูฟู ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0068, best cost 88.3346 + -106.768 = -18.4336 over 89 frames.
+M6131045121_0068 เอ ฟูฟู กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0069, best cost 84.966 + -120.419 = -35.4529 over 91 frames.
+M6131045121_0069 ก้อย เดิน ฟูฟู ไป บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0071, best cost 90.2373 + -119.211 = -28.9739 over 92 frames.
+M6131045121_0071 เอ ฟูฟู เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0073, best cost 91.5615 + -109.414 = -17.8521 over 92 frames.
+M6131045121_0073 เอ ฟูฟู เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0074, best cost 99.4821 + -124.705 = -25.2233 over 103 frames.
+M6131045121_0074 เอ ฟูฟู ดี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0075, best cost 110.984 + -142.014 = -31.0303 over 121 frames.
+M6131045121_0075 ก้อย เดิน ฟูฟู ดี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0076, best cost 118.349 + -132.053 = -13.7042 over 121 frames.
+M6131045121_0076 เอ ฟูฟู อี แปด กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0077, best cost 98.2088 + -130.926 = -32.7168 over 102 frames.
+M6131045121_0077 ก้อย เดิน ฟูฟู ดี สาม ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0078, best cost 85.0492 + -115.804 = -30.7547 over 95 frames.
+M6131045121_0078 ฟูฟู อี หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0079, best cost 101.654 + -132.84 = -31.1864 over 112 frames.
+M6131045121_0079 ฟูฟู อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0080, best cost 108.428 + -143.97 = -35.5426 over 116 frames.
+M6131045121_0080 เอ ฟูฟู เอฟ เจ็ด ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0081, best cost 117.551 + -153.088 = -35.537 over 124 frames.
+M6131045121_0081 เอช ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0082, best cost 80.0885 + -92.5602 = -12.4717 over 94 frames.
+M6131045121_0082 ราชา กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0084, best cost 74.7005 + -91.7442 = -17.0437 over 86 frames.
+M6131045121_0084 ราชา กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0085, best cost 73.7461 + -98.631 = -24.8849 over 83 frames.
+M6131045121_0085 ราชา เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0086, best cost 74.6689 + -86.165 = -11.4961 over 83 frames.
+M6131045121_0086 ราชา กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0087, best cost 75.6519 + -85.1225 = -9.4706 over 85 frames.
+M6131045121_0087 ราชา เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0088, best cost 83.5952 + -102.868 = -19.2728 over 85 frames.
+M6131045121_0088 ก้อย เดิน ราชา ไป ดี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0089, best cost 83.2514 + -105.103 = -21.8511 over 90 frames.
+M6131045121_0089 ก้อย เดิน ราชา ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0090, best cost 83.2472 + -115.472 = -32.2248 over 87 frames.
+M6131045121_0090 ก้อย เดิน ราชา ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0091, best cost 60.6868 + -70.9671 = -10.2803 over 63 frames.
+M6131045121_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0092, best cost 66.1886 + -75.8551 = -9.66651 over 73 frames.
+M6131045121_0092 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0093, best cost 68.7077 + -82.4445 = -13.7367 over 75 frames.
+M6131045121_0093 แต่งตั้ง ดี สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0094, best cost 65.3539 + -79.8788 = -14.5249 over 72 frames.
+M6131045121_0094 แต่งตั้ง ดี สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0095, best cost 68.7716 + -80.0532 = -11.2816 over 73 frames.
+M6131045121_0095 ซี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0096, best cost 62.5243 + -79.5956 = -17.0713 over 65 frames.
+M6131045121_0096 ซี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0097, best cost 74.7406 + -87.9508 = -13.2102 over 81 frames.
+M6131045121_0097 แต่งตั้ง ดี เจ็ด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0098, best cost 73.0926 + -75.1596 = -2.06701 over 79 frames.
+M6131045121_0098 แต่งตั้ง บี แปด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0099, best cost 64.7709 + -75.5839 = -10.8131 over 72 frames.
+M6131045121_0099 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0100, best cost 59.9503 + -79.0286 = -19.0784 over 64 frames.
+M6131045121_0100 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0101, best cost 60.5704 + -70.2921 = -9.72165 over 64 frames.
+M6131045121_0101 เอฟ สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0102, best cost 60.0636 + -77.4834 = -17.4199 over 64 frames.
+M6131045121_0102 เอช สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0103, best cost 63.4688 + -76.2224 = -12.7536 over 69 frames.
+M6131045121_0103 อี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0104, best cost 69.6184 + -75.7729 = -6.15444 over 77 frames.
+M6131045121_0104 แต่งตั้ง อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0105, best cost 62.3582 + -72.9008 = -10.5426 over 70 frames.
+M6131045121_0105 เอช หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0106, best cost 69.7676 + -85.752 = -15.9843 over 78 frames.
+M6131045121_0106 เอช สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0107, best cost 68.2189 + -106.153 = -37.9344 over 73 frames.
+M6131045121_0107 แต่งตั้ง เอฟ เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0109, best cost 77.3441 + -118.809 = -41.4645 over 86 frames.
+M6131045121_0109 แต่งตั้ง ซี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0110, best cost 70.2764 + -112.287 = -42.0103 over 78 frames.
+M6131045121_0110 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0111, best cost 76.0187 + -118.743 = -42.7241 over 87 frames.
+M6131045121_0111 แต่งตั้ง อี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0113, best cost 85.9539 + -113.89 = -27.9366 over 84 frames.
+M6131045121_0113 แต่งตั้ง จี เจ็ด เป็น หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0114, best cost 79.0987 + -108.289 = -29.1899 over 87 frames.
+M6131045121_0114 แต่งตั้ง เอช สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0115, best cost 83.3993 + -122.303 = -38.9035 over 97 frames.
+M6131045121_0115 แต่งตั้ง อี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0116, best cost 100.253 + -141.547 = -41.2941 over 106 frames.
+M6131045121_0116 แต่งตั้ง บี สอง เป็น ฟูฟู หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0117, best cost 85.3467 + -127.69 = -42.3434 over 101 frames.
+M6131045121_0117 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0118, best cost 97.8912 + -137.825 = -39.9339 over 117 frames.
+M6131045121_0118 แต่งตั้ง ดี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0119, best cost 93.2067 + -132.034 = -38.8274 over 112 frames.
+M6131045121_0119 แต่งตั้ง อี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0120, best cost 87.0436 + -130.188 = -43.1445 over 103 frames.
+M6131045121_0120 แต่งตั้ง เอฟ สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131045121_0121, best cost 88.2216 + -129.421 = -41.1995 over 106 frames.
+M6131045121_0121 แต่งตั้ง ซี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0002, best cost 83.8892 + -90.9208 = -7.03159 over 94 frames.
+M6131311021_0002 เอฟ สี่ กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0003, best cost 95.4563 + -91.2252 = 4.23118 over 100 frames.
+M6131311021_0003 เอ ธุลี เดิน ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0004, best cost 101.954 + -111.043 = -9.08896 over 110 frames.
+M6131311021_0004 เอช ธุลี ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0006, best cost 96.1396 + -97.9443 = -1.8047 over 106 frames.
+M6131311021_0006 เอฟ สี่ ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0007, best cost 126.824 + -127.795 = -0.971146 over 129 frames.
+M6131311021_0007 เอช ธุลี เดิน ไป ซี สาม ไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0008, best cost 92.628 + -85.7556 = 6.87238 over 101 frames.
+M6131311021_0008 เอช ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0009, best cost 98.5117 + -102.266 = -3.75456 over 115 frames.
+M6131311021_0009 เดิน ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0010, best cost 117.612 + -122.313 = -4.70124 over 137 frames.
+M6131311021_0010 แต่งตั้ง ดี ห้า เดิน อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0011, best cost 136.714 + -152.892 = -16.1785 over 148 frames.
+M6131311021_0011 เอช ธุลี อี ห้า เดิน ไป อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0012, best cost 111.338 + -128.452 = -17.1131 over 117 frames.
+M6131311021_0012 เอช ธุลี บี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0013, best cost 116.3 + -124.522 = -8.22238 over 120 frames.
+M6131311021_0013 เอช ธุลี บี สาม เดิน ไป บี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0014, best cost 105.987 + -115.276 = -9.28894 over 113 frames.
+M6131311021_0014 เอช ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0015, best cost 101.857 + -111.128 = -9.27058 over 117 frames.
+M6131311021_0015 แต่งตั้ง เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0017, best cost 108.442 + -114.18 = -5.73782 over 123 frames.
+M6131311021_0017 แต่งตั้ง ดี สี่ ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0018, best cost 82.1689 + -96.2921 = -14.1232 over 97 frames.
+M6131311021_0018 ก้อย กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0019, best cost 94.5577 + -120.482 = -25.9247 over 110 frames.
+M6131311021_0019 เดิน ก้อย ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0020, best cost 71.1569 + -82.2419 = -11.0851 over 80 frames.
+M6131311021_0020 ก้อย กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0022, best cost 76.5888 + -88.8626 = -12.2738 over 88 frames.
+M6131311021_0022 ก้อย ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0023, best cost 72.5842 + -90.5212 = -17.937 over 82 frames.
+M6131311021_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0024, best cost 66.6972 + -88.3607 = -21.6636 over 74 frames.
+M6131311021_0024 ก้อย ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0025, best cost 95.1848 + -107.746 = -12.5616 over 114 frames.
+M6131311021_0025 ก้อย เดิน ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0026, best cost 69.0803 + -74.4135 = -5.33311 over 77 frames.
+M6131311021_0026 ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0027, best cost 96.1131 + -102.727 = -6.61438 over 116 frames.
+M6131311021_0027 ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0028, best cost 85.8758 + -97.8303 = -11.9545 over 102 frames.
+M6131311021_0028 ก้อย ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0029, best cost 67.7949 + -88.8159 = -21.021 over 74 frames.
+M6131311021_0029 ก้อย เดิน ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0031, best cost 119.319 + -130.382 = -11.0629 over 130 frames.
+M6131311021_0031 ก้อย อี หก เดิน ไป จี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0032, best cost 106.848 + -124.059 = -17.2105 over 125 frames.
+M6131311021_0032 ก้อย จี ห้า กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0033, best cost 116.399 + -131.101 = -14.7023 over 131 frames.
+M6131311021_0033 เดิน ก้อย จี ห้า ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0034, best cost 93.7752 + -103.817 = -10.042 over 107 frames.
+M6131311021_0034 เดิน เณร กิน เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0035, best cost 88.8612 + -100.269 = -11.4083 over 102 frames.
+M6131311021_0035 เณร เดิน ไป เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0036, best cost 91.0314 + -108.097 = -17.0655 over 105 frames.
+M6131311021_0036 เดิน เณร กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0037, best cost 103.156 + -122.197 = -19.0406 over 121 frames.
+M6131311021_0037 เดิน เณร เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0038, best cost 92.1927 + -104.848 = -12.6552 over 109 frames.
+M6131311021_0038 เณร กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0039, best cost 90.3176 + -111.351 = -21.0338 over 105 frames.
+M6131311021_0039 เดิน เณร ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0040, best cost 76.3939 + -81.7742 = -5.38028 over 86 frames.
+M6131311021_0040 เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0041, best cost 84.2935 + -90.6825 = -6.38895 over 94 frames.
+M6131311021_0041 เดิน เณร ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0043, best cost 87.419 + -90.45 = -3.03101 over 101 frames.
+M6131311021_0043 เณร เดิน ไป อี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0044, best cost 75.612 + -85.6946 = -10.0826 over 89 frames.
+M6131311021_0044 เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0045, best cost 82.1263 + -100.229 = -18.103 over 95 frames.
+M6131311021_0045 เดิน เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0046, best cost 90.5195 + -109.456 = -18.9361 over 106 frames.
+M6131311021_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0047, best cost 110.534 + -126.472 = -15.9384 over 122 frames.
+M6131311021_0047 เดิน เณร เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0048, best cost 108.539 + -128.391 = -19.8515 over 114 frames.
+M6131311021_0048 เณร บี เจ็ด กิน เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0049, best cost 113.724 + -146.067 = -32.3424 over 125 frames.
+M6131311021_0049 เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0050, best cost 100.242 + -113.388 = -13.1462 over 115 frames.
+M6131311021_0050 เดิน เรือดำน้ำ กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0051, best cost 102.444 + -126.215 = -23.7711 over 117 frames.
+M6131311021_0051 เดิน เรือดำน้ำ เดิน ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0053, best cost 97.2701 + -114.694 = -17.4238 over 108 frames.
+M6131311021_0053 เดิน เรือดำน้ำ เดิน ไป บี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0054, best cost 90.9468 + -121.137 = -30.1901 over 108 frames.
+M6131311021_0054 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0055, best cost 102.035 + -132.367 = -30.3314 over 124 frames.
+M6131311021_0055 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0056, best cost 92.2301 + -107.431 = -15.2007 over 103 frames.
+M6131311021_0056 เดิน เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0057, best cost 100.548 + -121.895 = -21.3472 over 115 frames.
+M6131311021_0057 เดิน เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0058, best cost 119.821 + -130.038 = -10.2174 over 140 frames.
+M6131311021_0058 เดิน เรือดำน้ำ อี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0059, best cost 114.823 + -136.886 = -22.063 over 134 frames.
+M6131311021_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0060, best cost 127.216 + -146.793 = -19.5777 over 134 frames.
+M6131311021_0060 เดิน เรือดำน้ำ เอฟ เจ็ด กิน เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0061, best cost 119.228 + -149.412 = -30.1841 over 129 frames.
+M6131311021_0061 เรือดำน้ำ เอฟ เจ็ด เดิน ไป เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0062, best cost 103.159 + -130.189 = -27.0299 over 124 frames.
+M6131311021_0062 เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0063, best cost 104.064 + -126.426 = -22.3619 over 122 frames.
+M6131311021_0063 เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0064, best cost 111.304 + -141.428 = -30.1239 over 130 frames.
+M6131311021_0064 เรือดำน้ำ บี เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0065, best cost 119.438 + -148.431 = -28.993 over 141 frames.
+M6131311021_0065 เดิน เรือดำน้ำ เอ หก ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0066, best cost 93.1083 + -86.4971 = 6.61124 over 97 frames.
+M6131311021_0066 เอ ฟูฟู กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0067, best cost 64.7543 + -77.2604 = -12.5061 over 67 frames.
+M6131311021_0067 เดิน ฟูฟู ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0068, best cost 99.9211 + -109.688 = -9.76666 over 105 frames.
+M6131311021_0068 เอช ฟูฟู กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0069, best cost 84.5207 + -100.652 = -16.1312 over 96 frames.
+M6131311021_0069 เดิน ฟูฟู ไป บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0071, best cost 92.024 + -110.968 = -18.9436 over 103 frames.
+M6131311021_0071 เดิน ฟูฟู เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0073, best cost 98.9891 + -108.487 = -9.49773 over 102 frames.
+M6131311021_0073 เอช ฟูฟู เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0074, best cost 104.333 + -133.745 = -29.4116 over 110 frames.
+M6131311021_0074 เอ ฟูฟู ดี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0075, best cost 123.709 + -163.384 = -39.6759 over 145 frames.
+M6131311021_0075 เดิน ฟูฟู ดี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0076, best cost 116.269 + -126.891 = -10.6223 over 118 frames.
+M6131311021_0076 เอ ฟูฟู อี แปด กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0077, best cost 113.708 + -157.742 = -44.0344 over 129 frames.
+M6131311021_0077 เดิน ฟูฟู ดี สาม ไป เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0078, best cost 110.953 + -126.144 = -15.1906 over 118 frames.
+M6131311021_0078 เอช ฟูฟู อี หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0079, best cost 114.585 + -130.413 = -15.8286 over 117 frames.
+M6131311021_0079 เอ ฟูฟู อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0080, best cost 106.346 + -134.366 = -28.0202 over 113 frames.
+M6131311021_0080 เอ ฟูฟู เอฟ เจ็ด ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0081, best cost 123.294 + -159.304 = -36.0103 over 133 frames.
+M6131311021_0081 เอ ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0082, best cost 87.4568 + -96.0562 = -8.59947 over 98 frames.
+M6131311021_0082 เอช แปด กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0084, best cost 78.6031 + -92.5776 = -13.9745 over 85 frames.
+M6131311021_0084 เอช แปด กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0085, best cost 93.124 + -106.968 = -13.8441 over 97 frames.
+M6131311021_0085 เอ ราชา เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0086, best cost 98.5179 + -93.0485 = 5.46933 over 100 frames.
+M6131311021_0086 ราชา กิน ซี ห้า สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0087, best cost 72.8793 + -84.4342 = -11.5549 over 81 frames.
+M6131311021_0087 ราชา เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0088, best cost 85.2945 + -99.986 = -14.6915 over 94 frames.
+M6131311021_0088 เดิน ราชา ไป ดี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0089, best cost 79.4055 + -91.8439 = -12.4384 over 91 frames.
+M6131311021_0089 เดิน ราชา ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0090, best cost 90.4772 + -104.282 = -13.8047 over 103 frames.
+M6131311021_0090 เดิน ราชา ไป เอฟ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0091, best cost 69.0046 + -87.4213 = -18.4167 over 75 frames.
+M6131311021_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0092, best cost 67.4406 + -80.8757 = -13.4351 over 73 frames.
+M6131311021_0092 เอ สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0093, best cost 63.8557 + -82.3162 = -18.4605 over 68 frames.
+M6131311021_0093 แต่งตั้ง ดี สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0094, best cost 65.9886 + -79.6492 = -13.6606 over 72 frames.
+M6131311021_0094 อี สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0095, best cost 79.0643 + -92.466 = -13.4017 over 88 frames.
+M6131311021_0095 แต่งตั้ง ซี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0096, best cost 77.7735 + -89.8907 = -12.1172 over 87 frames.
+M6131311021_0096 ซี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0097, best cost 69.8886 + -93.4119 = -23.5233 over 74 frames.
+M6131311021_0097 แต่งตั้ง ดี เจ็ด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0098, best cost 80.7172 + -82.2534 = -1.53621 over 90 frames.
+M6131311021_0098 แต่งตั้ง บี แปด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0099, best cost 74.4749 + -83.8501 = -9.37513 over 86 frames.
+M6131311021_0099 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0100, best cost 76.5858 + -92.4942 = -15.9084 over 88 frames.
+M6131311021_0100 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0101, best cost 73.048 + -90.0371 = -16.9891 over 82 frames.
+M6131311021_0101 เอฟ สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0102, best cost 72.7505 + -95.9475 = -23.197 over 85 frames.
+M6131311021_0102 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0103, best cost 84.0513 + -93.711 = -9.6597 over 99 frames.
+M6131311021_0103 ก้อย จี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0104, best cost 74.4749 + -83.0815 = -8.60652 over 86 frames.
+M6131311021_0104 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0105, best cost 76.8975 + -91.6032 = -14.7057 over 92 frames.
+M6131311021_0105 เอฟ หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0106, best cost 73.2334 + -94.0576 = -20.8243 over 83 frames.
+M6131311021_0106 เอช สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0107, best cost 82.775 + -91.2585 = -8.48348 over 94 frames.
+M6131311021_0107 แต่งตั้ง เอฟ เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0109, best cost 84.9687 + -101.002 = -16.0332 over 97 frames.
+M6131311021_0109 แต่งตั้ง ซี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0110, best cost 80.5357 + -96.7608 = -16.2251 over 94 frames.
+M6131311021_0110 แต่งตั้ง บี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0111, best cost 82.0599 + -87.1825 = -5.12259 over 95 frames.
+M6131311021_0111 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0113, best cost 78.7491 + -88.9734 = -10.2242 over 87 frames.
+M6131311021_0113 แต่งตั้ง จี เจ็ด เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0114, best cost 77.9626 + -94.8151 = -16.8526 over 89 frames.
+M6131311021_0114 แต่งตั้ง เอฟ สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0115, best cost 82.6738 + -109.829 = -27.1555 over 92 frames.
+M6131311021_0115 แต่งตั้ง เอ สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0116, best cost 84.1413 + -112.754 = -28.6131 over 98 frames.
+M6131311021_0116 แต่งตั้ง บี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0117, best cost 85.3458 + -108.74 = -23.3939 over 101 frames.
+M6131311021_0117 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0118, best cost 92.346 + -118.311 = -25.9647 over 109 frames.
+M6131311021_0118 แต่งตั้ง ดี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0119, best cost 80.73 + -104.433 = -23.7031 over 94 frames.
+M6131311021_0119 แต่งตั้ง อี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0120, best cost 91.8956 + -123.808 = -31.9127 over 110 frames.
+M6131311021_0120 แต่งตั้ง เอฟ สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131311021_0121, best cost 102.86 + -136.388 = -33.5282 over 113 frames.
+M6131311021_0121 แต่งตั้ง ซี สาม เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0002, best cost 90.1276 + -100.37 = -10.2429 over 103 frames.
+M6131312721_0002 เอฟ สี่ กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0003, best cost 100.957 + -105.913 = -4.95573 over 111 frames.
+M6131312721_0003 อี เดิน ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0004, best cost 102.151 + -115.434 = -13.2831 over 111 frames.
+M6131312721_0004 เอ ธุลี ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0006, best cost 96.1265 + -111.564 = -15.4376 over 108 frames.
+M6131312721_0006 อี ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0007, best cost 115.304 + -140.527 = -25.2228 over 130 frames.
+M6131312721_0007 เอฟ สี่ เดิน ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0008, best cost 105.934 + -113.108 = -7.174 over 124 frames.
+M6131312721_0008 เอ ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0009, best cost 106.943 + -113.858 = -6.91446 over 115 frames.
+M6131312721_0009 เอ เดิน ธุลี ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0010, best cost 113.167 + -128.022 = -14.8548 over 134 frames.
+M6131312721_0010 อี ห้า เดิน อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0011, best cost 128.593 + -153.526 = -24.9334 over 137 frames.
+M6131312721_0011 เอ ธุลี อี ห้า เดิน ไป อี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0012, best cost 107.764 + -127.229 = -19.4649 over 122 frames.
+M6131312721_0012 ซี สาม ไป บี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0013, best cost 125.508 + -142.905 = -17.3974 over 134 frames.
+M6131312721_0013 เอ ธุลี บี สาม เดิน ไป บี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0014, best cost 105.07 + -119.391 = -14.321 over 117 frames.
+M6131312721_0014 อี เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0015, best cost 121.221 + -140.884 = -19.6631 over 129 frames.
+M6131312721_0015 เอ ธุลี เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0017, best cost 140.455 + -152.889 = -12.434 over 152 frames.
+M6131312721_0017 อี ห้า เดิน อี สี่ ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0018, best cost 91.6178 + -100.687 = -9.06873 over 103 frames.
+M6131312721_0018 เอ กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0019, best cost 98.6803 + -111.117 = -12.4364 over 103 frames.
+M6131312721_0019 เอ เดิน ก้อย ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0020, best cost 106.84 + -109.819 = -2.97842 over 126 frames.
+M6131312721_0020 เอฟ สี่ กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0022, best cost 84.2134 + -90.2109 = -5.99747 over 99 frames.
+M6131312721_0022 ก้อย ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0023, best cost 103.396 + -112.284 = -8.88795 over 112 frames.
+M6131312721_0023 เอ ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0024, best cost 72.9355 + -83.9012 = -10.9656 over 83 frames.
+M6131312721_0024 ก้อย ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0025, best cost 84.0945 + -94.8328 = -10.7384 over 98 frames.
+M6131312721_0025 ก้อย เดิน ไป ดี สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0026, best cost 84.6643 + -83.0436 = 1.62068 over 91 frames.
+M6131312721_0026 เอ เดิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0027, best cost 97.8119 + -103.369 = -5.55746 over 104 frames.
+M6131312721_0027 เอ ก้อย เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0028, best cost 77.5571 + -80.999 = -3.44186 over 90 frames.
+M6131312721_0028 ก้อย ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0029, best cost 90.5224 + -99.5468 = -9.02438 over 97 frames.
+M6131312721_0029 เอ หนึ่ง ไป เอฟ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0031, best cost 105.98 + -128.838 = -22.8576 over 117 frames.
+M6131312721_0031 อี หก เดิน ไป จี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0032, best cost 113.79 + -120.414 = -6.62399 over 121 frames.
+M6131312721_0032 เอ ก้อย จี ห้า กิน เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0033, best cost 112.896 + -123.046 = -10.1498 over 113 frames.
+M6131312721_0033 เอ เดิน ก้อย จี ห้า ไป เอช หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0034, best cost 89.6738 + -97.859 = -8.18526 over 97 frames.
+M6131312721_0034 เอ หนึ่ง กิน เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0035, best cost 108.58 + -122.786 = -14.2065 over 117 frames.
+M6131312721_0035 เอ เณร เดิน ไป เอ แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0036, best cost 95.7974 + -103.814 = -8.01652 over 108 frames.
+M6131312721_0036 เอช หนึ่ง กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0037, best cost 96.1434 + -110.503 = -14.3599 over 102 frames.
+M6131312721_0037 เอช เณร เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0038, best cost 84.7071 + -89.1418 = -4.43478 over 92 frames.
+M6131312721_0038 เอฟ สี่ กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0039, best cost 84.3687 + -86.1528 = -1.7841 over 99 frames.
+M6131312721_0039 ก้อย เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0040, best cost 88.2824 + -91.7343 = -3.45196 over 96 frames.
+M6131312721_0040 เอ ไป บี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0041, best cost 84.7741 + -92.0073 = -7.23315 over 98 frames.
+M6131312721_0041 ก้อย เดิน ไป บี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0043, best cost 84.248 + -82.421 = 1.82697 over 97 frames.
+M6131312721_0043 ก้อย เดิน ไป อี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0044, best cost 82.1108 + -84.2267 = -2.11592 over 90 frames.
+M6131312721_0044 เอช ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0045, best cost 98.7246 + -96.9332 = 1.79137 over 106 frames.
+M6131312721_0045 เอ เดิน เณร ไป เอฟ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0046, best cost 90.9815 + -105.143 = -14.1611 over 110 frames.
+M6131312721_0046 เอฟ หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0047, best cost 99.0879 + -116.308 = -17.2202 over 115 frames.
+M6131312721_0047 เอฟ หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0048, best cost 108.121 + -112.939 = -4.81723 over 109 frames.
+M6131312721_0048 เอ บี เจ็ด กิน เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0049, best cost 112.337 + -118.251 = -5.91365 over 123 frames.
+M6131312721_0049 เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0050, best cost 99.9199 + -101.881 = -1.96139 over 106 frames.
+M6131312721_0050 เอ เรือดำน้ำ กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0051, best cost 108.36 + -110.416 = -2.05578 over 117 frames.
+M6131312721_0051 เอ เรือดำน้ำ เดิน ไป เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0053, best cost 99.3485 + -124.256 = -24.9076 over 111 frames.
+M6131312721_0053 เดิน เรือดำน้ำ เดิน ไป บี แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0054, best cost 87.4791 + -107.953 = -20.4743 over 103 frames.
+M6131312721_0054 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0055, best cost 105.786 + -122.692 = -16.906 over 118 frames.
+M6131312721_0055 อี ห้า เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0056, best cost 99.5334 + -113.866 = -14.333 over 105 frames.
+M6131312721_0056 เอ เรือดำน้ำ ไป ดี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0057, best cost 98.2718 + -112.457 = -14.1849 over 109 frames.
+M6131312721_0057 เอ เรือดำน้ำ ไป ซี สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0058, best cost 113.261 + -129.306 = -16.0449 over 122 frames.
+M6131312721_0058 เอ เรือดำน้ำ อี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0059, best cost 116.85 + -137.871 = -21.0211 over 131 frames.
+M6131312721_0059 เดิน เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0060, best cost 117.949 + -124.003 = -6.05389 over 124 frames.
+M6131312721_0060 เดิน เรือดำน้ำ เอ เจ็ด กิน เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0061, best cost 117.792 + -126.938 = -9.14583 over 122 frames.
+M6131312721_0061 เดิน เรือดำน้ำ เอฟ เจ็ด เดิน ไป เอฟ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0062, best cost 97.8247 + -103.316 = -5.49086 over 113 frames.
+M6131312721_0062 เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0063, best cost 113.767 + -126.223 = -12.4564 over 136 frames.
+M6131312721_0063 เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0064, best cost 114.892 + -126.294 = -11.4018 over 121 frames.
+M6131312721_0064 เอช เรือดำน้ำ บี เจ็ด ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0065, best cost 102.8 + -114.558 = -11.7573 over 117 frames.
+M6131312721_0065 เดิน เรือดำน้ำ เอ หก ไป เอช เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0066, best cost 80.8874 + -88.7723 = -7.88496 over 89 frames.
+M6131312721_0066 เอฟ หก กิน เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0067, best cost 87.6282 + -98.9821 = -11.3539 over 100 frames.
+M6131312721_0067 เดิน ฟูฟู ไป เอ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0068, best cost 85.8168 + -89.7817 = -3.9649 over 95 frames.
+M6131312721_0068 เอฟ หก กิน บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0069, best cost 89.3727 + -90.8973 = -1.52464 over 103 frames.
+M6131312721_0069 เดิน ฟูฟู ไป บี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0071, best cost 95.4888 + -113.215 = -17.7266 over 108 frames.
+M6131312721_0071 เดิน ฟูฟู เดิน ไป ซี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0073, best cost 90.5747 + -96.098 = -5.5233 over 99 frames.
+M6131312721_0073 เดิน ฟูฟู เดิน ไป ดี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0074, best cost 92.2569 + -102.26 = -10.0036 over 101 frames.
+M6131312721_0074 เดิน ฟูฟู ดี สาม กิน อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0075, best cost 107.766 + -135.337 = -27.5708 over 122 frames.
+M6131312721_0075 เดิน ฟูฟู ดี สาม ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0076, best cost 112.803 + -123.213 = -10.4096 over 113 frames.
+M6131312721_0076 เอ ฟูฟู อี แปด กิน เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0077, best cost 107.469 + -126.09 = -18.6213 over 120 frames.
+M6131312721_0077 เดิน ฟูฟู ดี สาม ไป เอฟ หก 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0078, best cost 106.991 + -115.387 = -8.39621 over 113 frames.
+M6131312721_0078 เอ ฟูฟู อี หก ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0079, best cost 94.0734 + -99.8551 = -5.78166 over 105 frames.
+M6131312721_0079 อี หก เดิน ไป จี เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0080, best cost 102.88 + -123.75 = -20.8691 over 108 frames.
+M6131312721_0080 เอ ฟูฟู เอฟ เจ็ด ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0081, best cost 107.057 + -127.188 = -20.1308 over 118 frames.
+M6131312721_0081 เดิน ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0082, best cost 86.122 + -84.0158 = 2.10623 over 97 frames.
+M6131312721_0082 เดิน ราชา กิน เอ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0084, best cost 96.6549 + -98.9396 = -2.28466 over 103 frames.
+M6131312721_0084 เอช ราชา กิน บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0085, best cost 101.443 + -104.364 = -2.92144 over 109 frames.
+M6131312721_0085 เอ ราชา เดิน ไป บี สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0086, best cost 101.672 + -92.7339 = 8.93856 over 108 frames.
+M6131312721_0086 เอ ราชา กิน ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0087, best cost 101.269 + -99.6683 = 1.60083 over 108 frames.
+M6131312721_0087 เอ ราชา เดิน ไป ซี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0088, best cost 89.4534 + -92.3939 = -2.94054 over 100 frames.
+M6131312721_0088 เดิน ราชา ไป ดี หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0089, best cost 100.58 + -102.957 = -2.37678 over 115 frames.
+M6131312721_0089 ก้อย เดิน ราชา ไป อี ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0090, best cost 92.9368 + -88.4128 = 4.52402 over 100 frames.
+M6131312721_0090 ก้อย เดิน ราชา ไป เอฟ สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0091, best cost 84.2538 + -88.0252 = -3.7714 over 97 frames.
+M6131312721_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0092, best cost 88.235 + -99.432 = -11.197 over 103 frames.
+M6131312721_0092 เอ สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0093, best cost 82.0861 + -89.9726 = -7.88652 over 96 frames.
+M6131312721_0093 อี สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0094, best cost 80.5447 + -83.4732 = -2.92845 over 93 frames.
+M6131312721_0094 อี สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0095, best cost 81.2483 + -82.0024 = -0.754105 over 91 frames.
+M6131312721_0095 ซี ห้า กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0096, best cost 88.1707 + -89.2668 = -1.09605 over 102 frames.
+M6131312721_0096 ซี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0097, best cost 89.4992 + -85.5506 = 3.9486 over 105 frames.
+M6131312721_0097 อี เจ็ด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0098, best cost 88.901 + -88.0886 = 0.812393 over 103 frames.
+M6131312721_0098 อี แปด กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0099, best cost 77.9407 + -78.6408 = -0.700104 over 91 frames.
+M6131312721_0099 อี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0100, best cost 84.2105 + -91.4975 = -7.28707 over 99 frames.
+M6131312721_0100 อี สอง กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0101, best cost 86.2169 + -85.8789 = 0.337952 over 101 frames.
+M6131312721_0101 เอฟ สาม กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0102, best cost 87.9988 + -87.366 = 0.632751 over 107 frames.
+M6131312721_0102 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0103, best cost 81.0683 + -70.6917 = 10.3766 over 97 frames.
+M6131312721_0103 เอฟ สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0104, best cost 95.1022 + -85.5385 = 9.56377 over 112 frames.
+M6131312721_0104 ซี หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0105, best cost 81.7663 + -91.4827 = -9.71639 over 98 frames.
+M6131312721_0105 เอช หก กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0106, best cost 91.2552 + -98.8137 = -7.55853 over 109 frames.
+M6131312721_0106 เอช สี่ กิน ผ่าน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0107, best cost 87.6051 + -89.4236 = -1.8185 over 103 frames.
+M6131312721_0107 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0109, best cost 96.0591 + -97.6169 = -1.55782 over 113 frames.
+M6131312721_0109 แต่งตั้ง ซี เจ็ด เป็น ก้อย 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 545 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0110, best cost 86.7741 + -91.8528 = -5.07874 over 103 frames.
+M6131312721_0110 แต่งตั้ง บี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0111, best cost 86.4159 + -87.8368 = -1.42088 over 102 frames.
+M6131312721_0111 แต่งตั้ง อี เจ็ด เป็น ก้อย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0113, best cost 90.5326 + -94.789 = -4.25638 over 104 frames.
+M6131312721_0113 แต่งตั้ง จี เจ็ด เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0114, best cost 92.5187 + -87.8055 = 4.71321 over 110 frames.
+M6131312721_0114 แต่งตั้ง เอฟ สอง เป็น เณร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0115, best cost 86.733 + -83.8365 = 2.89654 over 103 frames.
+M6131312721_0115 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 545 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0116, best cost 94.5395 + -91.2641 = 3.27536 over 113 frames.
+M6131312721_0116 แต่งตั้ง บี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0117, best cost 92.2782 + -89.8227 = 2.45551 over 111 frames.
+M6131312721_0117 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0118, best cost 116.613 + -133.035 = -16.4223 over 130 frames.
+M6131312721_0118 เอ แต่งตั้ง บี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0119, best cost 98.7519 + -110.758 = -12.0062 over 120 frames.
+M6131312721_0119 แต่งตั้ง อี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0120, best cost 100.213 + -107.348 = -7.13458 over 122 frames.
+M6131312721_0120 แต่งตั้ง เอฟ สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6131312721_0121, best cost 104.647 + -99.882 = 4.76476 over 114 frames.
+M6131312721_0121 เอ แต่งตั้ง ซี สอง เป็น เรือดำน้ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is -0.150367 = 0.915307 [graph] + -1.06567 [acoustic] over 47617 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 545 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sun May  2 16:21:20 UTC 2021, elapsed time 0 seconds

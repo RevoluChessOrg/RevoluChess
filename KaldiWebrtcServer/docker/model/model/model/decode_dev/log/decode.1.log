@@ -1,0 +1,458 @@
+# online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:data/dev/split4/1/spk2utt "ark,s,cs:wav-copy scp,p:data/dev/split4/1/wav.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz" 
+# Started at Sun May  2 16:21:09 UTC 2021
+#
+online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:data/dev/split4/1/spk2utt 'ark,s,cs:wav-copy scp,p:data/dev/split4/1/wav.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz' 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Collapse():nnet-utils.cc:1472) Added 1 components, removed 2
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:CompileLooped():nnet-compile-looped.cc:345) Spent 0.0154538 seconds in looped compilation.
+wav-copy scp,p:data/dev/split4/1/wav.scp ark:- 
+lattice-scale --acoustic-scale=10.0 ark:- ark:- 
+M6131010121_0002 ก้อย กิน เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0002
+M6131010121_0003 เอ ธุลี เดิน ไป เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0003
+M6131010121_0004 เอ ธุลี ไป บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0004
+M6131010121_0006 เอ ธุลี ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0006
+M6131010121_0007 เอ ธุลี เดิน ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0007
+M6131010121_0008 เอ ธุลี ไป ดี สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0008
+M6131010121_0009 ก้อย เดิน ธุลี ไป ดี สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0009
+M6131010121_0010 ธุลี อี ห้า เดิน อี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0010
+M6131010121_0011 เอ ธุลี อี ห้า เดิน ไป อี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0011
+M6131010121_0012 ธุลี บี สาม ไป ดี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0012
+M6131010121_0013 ธุลี บี สาม เดิน ไป ดี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0013
+M6131010121_0014 เอ ธุลี เอฟ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0014
+M6131010121_0015 ธุลี เอฟ หก เดิน ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0015
+M6131010121_0017 เดิน ไป ดี สี่ ไป เอช หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0017
+M6131010121_0018 ก้อย กิน เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0018
+M6131010121_0019 เดิน ก้อย ไป เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0019
+M6131010121_0020 ก้อย กิน บี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0020
+M6131010121_0022 ก้อย ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0022
+M6131010121_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0023
+M6131010121_0024 ก้อย ไป ดี สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0024
+M6131010121_0025 ก้อย เดิน ไป ดี สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0025
+M6131010121_0026 ก้อย เดิน อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0026
+M6131010121_0027 ก้อย เดิน ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0027
+M6131010121_0028 ก้อย ไป เอฟ สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0028
+M6131010121_0029 ก้อย เดิน ไป เอฟ สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0029
+M6131010121_0031 ก้อย อี หก เดิน ไป จี แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0031
+M6131010121_0032 ก้อย จี ห้า กิน เอช หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0032
+M6131010121_0033 ก้อย เดิน ก้อย จี ห้า ไป เอช หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0033
+M6131010121_0034 เณร กิน เอ แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0034
+M6131010121_0035 เณร เดิน ไป เอ แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0035
+M6131010121_0036 เณร กิน บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0036
+M6131010121_0037 เณร เดิน ไป บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0037
+M6131010121_0038 เณร กิน ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0038
+M6131010121_0039 เดิน เณร ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0039
+M6131010121_0040 เณร ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0040
+M6131010121_0041 เดิน เณร ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0041
+M6131010121_0043 เณร เดิน ไป อี หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0043
+M6131010121_0044 เณร ไป เอฟ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0044
+M6131010121_0045 ก้อย เดิน เณร ไป เอฟ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0045
+M6131010121_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0046
+M6131010121_0047 เณร เอฟ หก เดิน ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0047
+M6131010121_0048 เณร บี เจ็ด กิน เอช หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0048
+M6131010121_0049 เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0049
+M6131010121_0050 เรือดำน้ำ กิน เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0050
+M6131010121_0051 เรือดำน้ำ เดิน ไป เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0051
+M6131010121_0053 เรือดำน้ำ เดิน ไป บี แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0053
+M6131010121_0054 เรือดำน้ำ ไป ซี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0054
+M6131010121_0055 เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0055
+M6131010121_0056 เรือดำน้ำ ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0056
+M6131010121_0057 ก้อย เดิน เรือดำน้ำ ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0057
+M6131010121_0058 เรือดำน้ำ อี สาม กิน อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0058
+M6131010121_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0059
+M6131010121_0060 เรือดำน้ำ เอฟ เจ็ด กิน เอฟ หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0060
+M6131010121_0061 เรือดำน้ำ เอฟ เจ็ด เดิน ไป เอช หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0061
+M6131010121_0062 เรือดำน้ำ เอ หก ไป จี หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0062
+M6131010121_0063 เดิน เรือดำน้ำ เอ หก ไป จี หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0063
+M6131010121_0064 เรือดำน้ำ บี เจ็ด ไป เอช เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0064
+M6131010121_0065 เดิน เรือดำน้ำ เอ หก ไป เอช เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0065
+M6131010121_0066 ฟูฟู กิน เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0066
+M6131010121_0067 เดิน ฟูฟู ไป อี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0067
+M6131010121_0068 ฟูฟู กิน บี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0068
+M6131010121_0069 เดิน ฟูฟู ไป ดี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0069
+M6131010121_0071 ฟูฟู เดิน ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0071
+M6131010121_0073 ฟูฟู เดิน ไป ดี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0073
+M6131010121_0074 ฟูฟู ดี สาม กิน อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0074
+M6131010121_0075 ก้อย เดิน ฟูฟู ดี สาม ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0075
+M6131010121_0076 ฟูฟู อี แปด กิน เอฟ หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0076
+M6131010121_0077 ก้อย เดิน ฟูฟู ดี สาม ไป เอฟ หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0077
+M6131010121_0078 ฟูฟู อี หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0078
+M6131010121_0079 ฟูฟู อี หก เดิน ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0079
+M6131010121_0080 ฟูฟู เอฟ เจ็ด ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0080
+M6131010121_0081 ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0081
+M6131010121_0082 เอ ราชา กิน เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0082
+M6131010121_0084 ราชา กิน บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0084
+M6131010121_0085 ราชา เดิน ไป บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0085
+M6131010121_0086 ราชา กิน ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0086
+M6131010121_0087 ราชา เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0087
+M6131010121_0088 ก้อย เดิน ราชา ไป ดี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0088
+M6131010121_0089 เดิน ราชา ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0089
+M6131010121_0090 ก้อย เดิน ราชา ไป เอฟ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0090
+M6131010121_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0091
+M6131010121_0092 เอ สอง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0092
+M6131010121_0093 อี สาม กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0093
+M6131010121_0094 อี สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0094
+M6131010121_0095 ซี ห้า กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0095
+M6131010121_0096 ซี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0096
+M6131010121_0097 เอ ดี เจ็ด กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0097
+M6131010121_0098 อี แปด กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0098
+M6131010121_0099 อี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0099
+M6131010121_0100 อี สอง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0100
+M6131010121_0101 เอฟ สาม กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0101
+M6131010121_0102 เอฟ สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0102
+M6131010121_0103 จี ห้า กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0103
+M6131010121_0104 อี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0104
+M6131010121_0105 เอช หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0105
+M6131010121_0106 เอช สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0106
+M6131010121_0107 แต่งตั้ง เอฟ เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0107
+M6131010121_0109 แต่งตั้ง ซี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0109
+M6131010121_0110 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0110
+M6131010121_0111 แต่งตั้ง อี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0111
+M6131010121_0113 แต่งตั้ง จี เจ็ด เป็น เณร 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0113
+M6131010121_0114 แต่งตั้ง เอช สอง เป็น เณร 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0114
+M6131010121_0115 แต่งตั้ง อี สอง เป็น ฟูฟู 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0115
+M6131010121_0116 แต่งตั้ง บี สอง เป็น ฟูฟู 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0116
+M6131010121_0117 แต่งตั้ง ซี สอง เป็น ฟูฟู 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0117
+M6131010121_0118 แต่งตั้ง ดี สอง เป็น เรือดำน้ำ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0118
+M6131010121_0119 แต่งตั้ง อี สอง เป็น เรือดำน้ำ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0119
+M6131010121_0120 แต่งตั้ง เอฟ สอง เป็น เรือดำน้ำ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0120
+M6131010121_0121 แต่งตั้ง ซี สาม เป็น เรือดำน้ำ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131010121_0121
+M6131034221_0002 เอ ธุลี บี สาม กิน เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0002
+M6131034221_0003 อี สาม เดิน ไป เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0003
+M6131034221_0004 เอฟ สี่ ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0004
+M6131034221_0006 เอ ธุลี ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0006
+M6131034221_0007 เอ ธุลี เดิน ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0007
+M6131034221_0008 เอ ธุลี ไป ดี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0008
+M6131034221_0009 ก้อย เดิน ธุลี ไป ดี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0009
+M6131034221_0010 อี ห้า เดิน ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0010
+M6131034221_0011 ซี ห้า เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0011
+M6131034221_0012 ธุลี บี สาม ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0012
+M6131034221_0013 เอ ธุลี บี สาม เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0013
+M6131034221_0014 เอฟ สี่ เอฟ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0014
+M6131034221_0015 ธุลี เอฟ หก เดิน ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0015
+M6131034221_0017 เดิน ฟูฟู ดี สาม ไป เอช เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0017
+M6131034221_0018 ก้อย กิน เอ หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0018
+M6131034221_0019 เดิน ก้อย ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0019
+M6131034221_0020 ก้อย กิน บี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0020
+M6131034221_0022 ก้อย ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0022
+M6131034221_0023 ก้อย เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0023
+M6131034221_0024 ก้อย ไป ดี สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0024
+M6131034221_0025 ก้อย เดิน ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0025
+M6131034221_0026 ก้อย เดิน ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0026
+M6131034221_0027 ก้อย เดิน ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0027
+M6131034221_0028 ก้อย ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0028
+M6131034221_0029 ก้อย เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0029
+M6131034221_0031 ก้อย เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0031
+M6131034221_0032 ก้อย จี ห้า กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0032
+M6131034221_0033 เดิน ก้อย จี ห้า ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0033
+M6131034221_0034 เดิน เณร กิน เอ แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0034
+M6131034221_0035 เณร เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0035
+M6131034221_0036 เณร กิน บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0036
+M6131034221_0037 เณร เดิน ไป บี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0037
+M6131034221_0038 เณร กิน ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0038
+M6131034221_0039 ก้อย เดิน เณร ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0039
+M6131034221_0040 เอ ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0040
+M6131034221_0041 ก้อย เดิน เณร ไป ดี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0041
+M6131034221_0043 เณร เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0043
+M6131034221_0044 เอ แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0044
+M6131034221_0045 ก้อย เดิน ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0045
+M6131034221_0046 เณร เอฟ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0046
+M6131034221_0047 เณร เอฟ หก เดิน ไป ดี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0047
+M6131034221_0048 เอ หนึ่ง หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0048
+M6131034221_0049 ก้อย เดิน เณร บี เจ็ด ไป เอช หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0049
+M6131034221_0050 เรือดำน้ำ เอ หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0050
+M6131034221_0051 เรือดำน้ำ เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0051
+M6131034221_0053 เรือดำน้ำ เดิน ไป เอ แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0053
+M6131034221_0054 เรือดำน้ำ ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0054
+M6131034221_0055 ก้อย เดิน เรือดำน้ำ ไป ซี สอง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0055
+M6131034221_0056 เอ เรือดำน้ำ เดิน ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0056
+M6131034221_0057 ก้อย เดิน เรือดำน้ำ ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0057
+M6131034221_0058 เรือดำน้ำ อี สาม กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0058
+M6131034221_0059 เรือดำน้ำ อี สาม เดิน ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0059
+M6131034221_0060 เรือดำน้ำ เอฟ เจ็ด ไป เอช หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0060
+M6131034221_0061 เรือดำน้ำ เอฟ เจ็ด หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0061
+M6131034221_0062 เรือดำน้ำ เอ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0062
+M6131034221_0063 เดิน เรือดำน้ำ ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0063
+M6131034221_0064 เรือดำน้ำ บี เจ็ด ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0064
+M6131034221_0065 ก้อย เดิน เรือดำน้ำ เอ หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0065
+M6131034221_0066 เอ หนึ่ง กิน เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0066
+M6131034221_0067 ก้อย เดิน ไป เอ สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0067
+M6131034221_0068 เอ หนึ่ง กิน บี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0068
+M6131034221_0069 เอ หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0069
+M6131034221_0071 เอ หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0071
+M6131034221_0073 เอ หนึ่ง เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0073
+M6131034221_0074 ฟูฟู ดี สาม ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0074
+M6131034221_0075 แต่งตั้ง ดี สาม ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0075
+M6131034221_0076 ฟูฟู อี แปด กิน เอฟ หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0076
+M6131034221_0077 เดิน ฟูฟู ดี สาม ไป เอฟ หก 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0077
+M6131034221_0078 อี หก ไป จี เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0078
+M6131034221_0079 เอ ฟูฟู อี หก เดิน ไป ซี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0079
+M6131034221_0080 ฟูฟู เอฟ เจ็ด ไป เอช เจ็ด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0080
+M6131034221_0081 เอ ฟูฟู เอฟ เจ็ด เดิน ไป เอช แปด 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0081
+M6131034221_0082 เอ ราชา กิน เอ สี่ 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0082
+M6131034221_0084 ราชา กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0084
+M6131034221_0085 เอ ราชา เดิน ไป 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0085
+M6131034221_0086 ราชา กิน อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0086
+M6131034221_0087 ราชา เดิน ไป ซี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0087
+M6131034221_0088 เดิน ราชา ไป ดี หนึ่ง 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0088
+M6131034221_0089 ก้อย เดิน ราชา ไป อี ห้า 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0089
+M6131034221_0090 ก้อย เดิน ราชา ไป ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0090
+M6131034221_0091 เอ หนึ่ง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0091
+M6131034221_0092 เอ สอง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0092
+M6131034221_0093 อี สาม กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0093
+M6131034221_0094 เอ สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0094
+M6131034221_0095 ซี ห้า กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0095
+M6131034221_0096 อี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0096
+M6131034221_0097 อี เจ็ด กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0097
+M6131034221_0098 อี แปด กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0098
+M6131034221_0099 อี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0099
+M6131034221_0100 อี สอง กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0100
+M6131034221_0101 เอฟ สาม กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0101
+M6131034221_0102 เอฟ สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0102
+M6131034221_0103 อี ห้า กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0103
+M6131034221_0104 อี หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0104
+M6131034221_0105 เอช หก กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0105
+M6131034221_0106 เอฟ สี่ กิน ผ่าน 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0106
+M6131034221_0107 แต่งตั้ง เอ เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0107
+M6131034221_0109 แต่งตั้ง บี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0109
+M6131034221_0110 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0110
+M6131034221_0111 แต่งตั้ง ดี เจ็ด เป็น ก้อย 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0111
+M6131034221_0113 แต่งตั้ง อี เจ็ด เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0113
+M6131034221_0114 แต่งตั้ง เอฟ สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0114
+M6131034221_0115 แต่งตั้ง เอฟ สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0115
+M6131034221_0116 แต่งตั้ง บี สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0116
+M6131034221_0117 แต่งตั้ง ซี สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0117
+M6131034221_0118 แต่งตั้ง บี สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0118
+M6131034221_0119 แต่งตั้ง บี สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0119
+LOG (wav-copy[5.5.0~1494-e5a5]:main():wav-copy.cc:68) Copied 218 wave files
+M6131034221_0120 แต่งตั้ง เอฟ สอง เป็น 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0120
+M6131034221_0121 แต่งตั้ง ซี สาม 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:296) Decoded utterance M6131034221_0121
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:36) Timing stats: real-time factor was 1.00392 (note: this cannot be less than one.)
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:38) Average delay was 0.00799245 seconds.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:42) Percentage of time spent idling was 98.6576
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:44) Longest delay was 0.0584741 seconds for utterance 'M6131034221_0010'
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:302) Decoded 218 utterances, 0 with errors.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:304) Overall likelihood per frame was 0.978682 per frame over 14749 frames.
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 218 lattices.
+# Accounting: time=9 threads=1
+# Ended (code 0) at Sun May  2 16:21:18 UTC 2021, elapsed time 9 seconds

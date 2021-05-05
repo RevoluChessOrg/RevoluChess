@@ -1,0 +1,30 @@
+!SIL !SIL SIL_S
+<eps> <eps> SIL
+กิน กิน k_B i_I n^_E
+ก้อย ก้อย k_B @@_I j^_E
+จี จี c_B ii_E
+ซี ซี s_B ii_E
+ดี ดี d_B ii_E
+ธุลี ธุลี th_B u_I l_I ii_E
+บี บี b_B ii_E
+ผ่าน ผ่าน ph_B aa_I n^_E
+ฟูฟู ฟูฟู f_B uu_I f_I uu_E
+ราชา ราชา r_B aa_I ch_I aa_E
+สอง สอง s_B @@_I ng^_E
+สาม สาม s_B aa_I m^_E
+สี่ สี่ s_B ii_E
+หก หก h_B o_I k^_E
+หนึ่ง หนึ่ง n_B v_I ng^_E
+ห้า ห้า h_B aa_E
+อี อี z_B ii_E
+เจ็ด เจ็ด c_B e_I t^_E
+เณร เณร n_B ee_I n^_E
+เดิน เดิน d_B qq_I n^_E
+เป็น เป็น p_B e_I n^_E
+เรือดำน้ำ เรือดำน้ำ r_B vva_I d_I a_I m^_I n_I aa_I m^_E
+เอ เอ z_B ee_E
+เอช เอช z_B ee_I t^_E
+เอฟ เอฟ z_B ee_I p^_E
+แต่งตั้ง แต่งตั้ง t_B xx_I ng^_I t_I a_I ng^_E
+แปด แปด p_B xx_I t^_E
+ไป ไป p_B a_I j^_E

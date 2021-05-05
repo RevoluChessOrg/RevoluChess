@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  kaldi:
+    # image: "danijel3/kaldi-online-tcp:aspire"
+    image: "mymodel"
+  web:
+    image: "danijel3/kaldi-webrtc"
+    volumes:
+      - ./servers.json:/server/servers.json
+    ports:
+      - "8080:8080"
