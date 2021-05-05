@@ -1,14 +1,25 @@
 import React from "react";
 
-import AudioReactRecorder, { RecordState } from "audio-react-recorder";
+// import AudioReactRecorder, { RecordState } from "audio-react-recorder";
 // eslint-disable-next-line
 import axios from "axios";
+
+import ASR from "./asr";
 
 import "../index.css";
 import Board from "./board.js";
 import King from "../pieces/king";
 // eslint-disable-next-line
 import Pawn from "../pieces/pawn";
+// eslint-disable-next-line
+import Queen from "../pieces/queen";
+// eslint-disable-next-line
+import Knight from "../pieces/knight";
+// eslint-disable-next-line
+import Rook from "../pieces/rook";
+// eslint-disable-next-line
+import Bishop from "../pieces/bishop";
+
 import FallenSoldierBlock from "./fallen-soldier-block.js";
 import initialiseChessBoard from "../helpers/board-initialiser.js";
 import { tryPromote } from "../helpers/utils";
@@ -184,6 +195,95 @@ export default class Game extends React.Component {
         );
     }
 
+    // 'เรือ เอ สาม ไป บี หนึ่ง' => this.handleClick(3) ,  this.handleClick(9)
+    //
+    handleTrans(words) {
+
+        const { squares, player } = this.state;
+        const isWhite = player === 1;
+        const isKing = (square) => (square instanceof King);
+        let st=0
+        // king.player <== get player
+        // const res = this.handleClick(3); undefined, 'success'
+        const alp = ["เอ", "บี", "ซี", "ดี", "อี", "เอฟ", "จี", "เอช"];
+        const num = ["หนึ่ง", "สอง", "สาม", "สี่", "ห้า", "หก", "เจ็ด", "แปด"];
+        const pieces = ["ธุลี","ก้อย","เณร","เรือดำน้ำ","ฟูฟู","ราชา"]
+        const piecesMap = {"ธุลี": Pawn,"ก้อย": Queen,"เณร": Bishop,"เรือดำน้ำ": Rook,"ฟูฟู": Knight,"ราชา": King};
+        const wordlist = words.split(" ");
+        let x = -1,
+            y = -1,
+            res;
+        let first = []
+        for (let i = 0; i < wordlist.length; i++) {
+            if(st===0){
+                if (alp.includes(wordlist[i])) {
+                    y = alp.indexOf(wordlist[i]);
+                    st = 1
+                }
+                else if(pieces.includes(wordlist[i])){
+                    for(let j = 0; j < 64; j++){
+                        if(squares[j] instanceof piecesMap[wordlist[i]] && squares.player===isWhite){
+                            first.push(j)
+                        }
+                    }
+                    if(first.length === 0)return false
+                    st=2
+                }
+            }
+            else if(st==1){
+                if (num.includes(wordlist[i])) {
+                    x = 7 - num.indexOf(wordlist[i]);
+                    first.push(x*8+y);
+                    st=4
+                }
+                else st=0
+            }
+            else if(st==2){
+                if (alp.includes(wordlist[i])) {
+                    y = alp.indexOf(wordlist[i]);
+                    st = 3
+                }
+                else st=4;
+            }
+            else if(st==3){
+                if (num.includes(wordlist[i])) {
+                    x = 7 - num.indexOf(wordlist[i]);
+                    let ch=0;
+                    for(let j=0;j<first.length;j++){
+                        if(first[j]===x*8+y){
+                            ch=1
+                            break;
+                        }
+                    }
+                    if(ch===0)return false;
+                    first=[]
+                    first.push(x*8+y);
+                }
+                st=4;
+            }
+            else if(st==4){
+                if (alp.includes(wordlist[i])) {
+                    y = alp.indexOf(wordlist[i]);
+                    st = 5
+                }
+            }
+            else if(st==5){
+                if (num.includes(wordlist[i])) {
+                    x = 7 - num.indexOf(wordlist[i]);
+                    for(let k = 0;k<first.length;k++){
+                        res = this.handleClick(first[k]);
+                        if(res==='success'){
+                            res = this.handleClick(x*8+y)
+                            if(res==='success')return true;
+                        }
+                    }
+                }
+                else return false
+            }
+        }
+        return false;
+    }
+
     async handleAudioResponse(audio) {
         // eslint-disable-next-line
         const { blob, type, url } = audio;
@@ -248,7 +348,7 @@ export default class Game extends React.Component {
                     </li>
                 </ul> */}
 
-                <div>
+                {/* <div>
                     <button
                         style={{ fontSize: 30, background: `rgb(0, 255, 0, .2)` }}
                         onClick={() => this.setState({ recordState: RecordState.START })}
@@ -261,9 +361,10 @@ export default class Game extends React.Component {
                     >
                         Stop
                     </button>
-                </div>
+                </div> */}
                 <div style={{ marginTop: 5 }}>
-                    <AudioReactRecorder state={this.state.recordState} onStop={this.handleAudioResponse} />
+                    <ASR handleTrans={this.handleTrans} />
+                    {/* <AudioReactRecorder state={this.state.recordState} onStop={this.handleAudioResponse} /> */}
                 </div>
             </div>
         );

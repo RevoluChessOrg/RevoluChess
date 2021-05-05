@@ -1,0 +1,28 @@
+version: "3.3"
+services:
+    kaldi:
+        # image: "danijel3/kaldi-online-tcp:aspire"
+        image: "mymodel"
+    web:
+        image: "danijel3/kaldi-webrtc"
+        volumes:
+            - ./KaldiWebrtcServer/servers.json:/server/servers.json
+        ports:
+            - "8080:8080"
+    react:
+        build: 
+            ./front
+        container_name: asr-react-app
+        restart: always
+        ports:
+            - "3000:3000"
+    nginx:
+        image: nginx:1.13
+        container_name: asr-nginx
+        ports:
+            - "80:80"
+        volumes:
+            - ./frontend/nginx:/etc/nginx/conf.d
+        
+        depends_on:
+            - nuxt
